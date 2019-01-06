@@ -1,10 +1,10 @@
 <?php
-include "cred.php";
-function getConnection()
+
+function getConnection($dbPass)
 {
     //database login credentials
     $host = "localhost";
-    $dbname = "test";
+    $dbname = "reg8";
     $username = "root";
     $password = $dbPass;
 

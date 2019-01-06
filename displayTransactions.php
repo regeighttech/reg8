@@ -1,5 +1,5 @@
 <?php
-
+include "keys/cred.php";
 // if(isset($_POST['loginform']))
 // {
 // 	echo "Sent message {$message->sid}";
@@ -9,6 +9,13 @@
 // 	echo "Hello";
 // 	echo "<script> div_showCode();</script>";
 // }
+include "databaseConnection.php";
+$dbConn = getConnection($dbPass);
+
+$sql = "SELECT * FROM adminDash";
+$stmt = $dbConn->prepare($sql);
+$stmt->execute();
+$transactions = $stmt->fetchAll();
 ?>
 
 <!DOCTYPE HTML>
@@ -47,7 +54,7 @@
 <!-- <script src="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css"></script>
 <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script> -->
 
-<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
   
 <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
 <style>
@@ -87,8 +94,27 @@
 	        </tr>
 	    </thead>
 	    <tbody>
-	        <tr>
-	            <td>Row 1 Data 1</td>
+	       
+	        	<?php
+	        	foreach($transactions as $row)
+	        	{
+	        		echo "<tr>";
+	        		echo "<td>" . "Logo";
+	        		echo "<td>" . $row['uniscoID'] . "</td>";
+	        		echo "<td>" . $row['employerTaxID'] . "</td>";
+	        		echo "<td>" . date_format(date_create($row['dateOfTrans']),"m/d/Y") . "</td>";
+	        		echo "<td>" . $row['name'] . "</td>";
+	        		echo "<td>" . $row['ssn'] . "</td>";
+	        		echo "<td>" . $row['employeeID'] . "</td>";
+	        		echo "<td>$" . $row['amtAccessed'] . "</td>";
+	        		echo "<td>" . $row['remainingBalance'] . "</td>";
+	        		echo "<td>" . date_format(date_create($row['currPayPerEndDate']),"m/d/Y") . "</td>";
+	        		echo "<td>" . $row['netAccess'] . "%</td>";
+	        		echo "<td>" . $row['status'] . "</td>";
+	        		echo "</tr>";
+	        	}
+	        	?>
+	            <!-- <td>Row 1 Data 1</td>
 	            <td>Row 1 Data 2</td>
 	            <td>Row 1 Data 1</td>
 	            <td>Row 1 Data 2</td>
@@ -99,8 +125,7 @@
 	            <td>Row 1 Data 1</td>
 	            <td>Row 1 Data 2</td>
 	            <td>Row 1 Data 1</td>
-	            <td>Row 1 Data 2</td>
-	        </tr>
+	            <td>Row 1 Data 2</td> -->
 	        
 	    </tbody>
 	</table>
