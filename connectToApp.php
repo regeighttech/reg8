@@ -8,6 +8,21 @@ $stmt = $dbConn->prepare($sql);
 $stmt->execute();
 $transactions = $stmt->fetchAll();
 
-echo $transactions;
+$resultArray = array();
+$tempArray = array();
+
+// Loop through each result
+ foreach($transactions as $row)
+ {
+ // Add each result into the results array
+ 	$tempArray = $row;
+     array_push($resultArray, $tempArray);
+ }
+ 
+ // Encode the array to JSON and output the results
+ echo json_encode($resultArray);
+
+
+// echo $transactions;
 
 ?>
