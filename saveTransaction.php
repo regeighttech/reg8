@@ -25,6 +25,6 @@ $parameters[':netAccess'] = "50";
 $parameters[':status'] = "denied";
 $stmt = $dbConn->prepare($sql);
 
-$stmt->execute();
+// $stmt->execute();
     
 ?>
