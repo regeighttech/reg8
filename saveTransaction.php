@@ -22,6 +22,6 @@ $parameters[':currPayPerEndDate'] = date("Y/m/d");
 $parameters[':netAccess'] = "50";
 $parameters[':status'] = $_GET['status'];
 $stmt = $dbConn->prepare($sql);
-$stmt->execute($parameters);
+// $stmt->execute($parameters);
 
 ?>
