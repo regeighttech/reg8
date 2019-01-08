@@ -1,10 +1,10 @@
 <?php
-// date_default_timezone_set('America/Los_Angeles');
+date_default_timezone_set('America/Los_Angeles');
 
 // include "keys/cred.php";
 
 include "/reg8/databaseConnection.php";
-// $dbConn = getConnection();
+$dbConn = getConnection();
 
 $sql = 'INSERT INTO adminDash (uniscoID, employerTaxID, dateOfTrans, name, ssn, employeeID, amtAccessed, remainingBalance, currPayPerEndDate, netAccess, status) 
 		VALUES (:uniscoID, :employerTaxID, :dateOfTrans, :name, :ssn, :employeeID, :amtAccessed, :remainingBalance, :currPayPerEndDate, :netAccess, :status)';
