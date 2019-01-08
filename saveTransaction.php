@@ -3,7 +3,7 @@
 
 // include "keys/cred.php";
 
-include "databaseConnection.php";
+include "/reg8/databaseConnection.php";
 // $dbConn = getConnection();
 
 $sql = 'INSERT INTO adminDash (uniscoID, employerTaxID, dateOfTrans, name, ssn, employeeID, amtAccessed, remainingBalance, currPayPerEndDate, netAccess, status) 
