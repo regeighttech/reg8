@@ -23,7 +23,7 @@ $parameters[':remainingBalance'] = "100";
 // $parameters[':currPayPerEndDate'] = date("Y-m-d");
 $parameters[':netAccess'] = "50";
 $parameters[':status'] = "denied";
-$stmt = $dbConn->prepare($sql);
+// $stmt = $dbConn->prepare($sql);
 
 // $stmt->execute();
     
