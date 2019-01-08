@@ -6,8 +6,8 @@ include "keys/cred.php";
 include "databaseConnection.php";
 $dbConn = getConnection();
 
-$sql = "INSERT INTO adminDash (uniscoID, employerTaxID, dateOfTrans, name, ssn, employeeID, amtAccessed, remainingBalance, currPayPerEndDate, netAccess, status) 
-		VALUES (:uniscoID, :employerTaxID, :dateOfTrans, :name, :ssn, :employeeID, :amtAccessed, :remainingBalance, :currPayPerEndDate, :netAccess, :status)";
+$sql = "INSERT INTO adminDash (logo, uniscoID, employerTaxID, dateOfTrans, name, ssn, employeeID, amtAccessed, remainingBalance, currPayPerEndDate, netAccess, status) 
+		VALUES ("", :uniscoID, :employerTaxID, :dateOfTrans, :name, :ssn, :employeeID, :amtAccessed, :remainingBalance, :currPayPerEndDate, :netAccess, :status)";
 
 $parameters = array();
 $parameters[':uniscoID'] = "U324";
@@ -22,9 +22,7 @@ $parameters[':currPayPerEndDate'] = date("Y-m-d");
 $parameters[':netAccess'] = "50";
 $parameters[':status'] = $_GET['status'];
 $stmt = $dbConn->prepare($sql);
-try{
+
 $stmt->execute($parameters);
-}catch (Exception $e) {
-        echo "Connection failed: " . $e->getMessage();
-    }
+    
 ?>
