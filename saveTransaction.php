@@ -20,8 +20,9 @@ $parameters[':amtAccessed'] = $_GET['amt'];
 $parameters[':remainingBalance'] = $_GET['remainig'];
 $parameters[':currPayPerEndDate'] = date("Y/m/d");
 $parameters[':netAccess'] = "50";
-$parameters[':status'] = $_GET['status'];
+
 $stmt = $dbConn->prepare($sql);
+echo $parameters[':status'] = $_GET['status'];
 // $stmt->execute($parameters);
 
 ?>
