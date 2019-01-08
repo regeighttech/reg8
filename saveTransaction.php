@@ -6,7 +6,7 @@
 // include "keys/cred.php";
 
 include "databaseConnection.php";
-$dbConn = getConnection();
+// $dbConn = getConnection();
 
 $sql = "INSERT INTO adminDash (logo, uniscoID, employerTaxID, dateOfTrans, name, ssn, employeeID, amtAccessed, remainingBalance, currPayPerEndDate, netAccess, status) 
 		VALUES (" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ")";
