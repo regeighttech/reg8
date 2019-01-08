@@ -1,7 +1,5 @@
 <?php
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
+
 date_default_timezone_set('America/Los_Angeles');
 
 include "keys/cred.php";
@@ -19,11 +17,11 @@ $parameters[':dateOfTrans'] = date("Y-m-d");
 $parameters[':name'] = "Johnny Smith";
 $parameters[':ssn'] = "9009";
 $parameters[':employeeID'] = "10001";
-$parameters[':amtAccessed'] = $_GET['amt'];
-$parameters[':remainingBalance'] = $_GET['remainig'];
+$parameters[':amtAccessed'] = "100";
+$parameters[':remainingBalance'] = "100";
 $parameters[':currPayPerEndDate'] = date("Y-m-d");
 $parameters[':netAccess'] = "50";
-$parameters[':status'] = $_GET['status'];
+$parameters[':status'] = "denied";
 $stmt = $dbConn->prepare($sql);
 
 $stmt->execute($parameters);
