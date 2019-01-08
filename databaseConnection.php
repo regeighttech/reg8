@@ -1,25 +1,25 @@
 <?php
 
-function getConnection($dbPass)
-{
-    //database login credentials
-    $host = "localhost";
-    $dbname = "reg8";
-    $username = "root";
-    $password = "root";
+// function getConnection($dbPass)
+// {
+//     //database login credentials
+//     $host = "localhost";
+//     $dbname = "reg8";
+//     $username = "root";
+//     $password = "root";
 
-    try {
-        $dbConn = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
-        // Check for ERROR
-        $dbConn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); // Return Connection
-        //echo "Connected successfully";
-        return $dbConn;
-    } catch (PDOException $e) {
-        echo "Connection failed: " . $e->getMessage();
-    }
+//     try {
+//         $dbConn = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
+//         // Check for ERROR
+//         $dbConn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); // Return Connection
+//         //echo "Connected successfully";
+//         return $dbConn;
+//     } catch (PDOException $e) {
+//         echo "Connection failed: " . $e->getMessage();
+//     }
 
-    setlocale(LC_MONETARY, 'en_US.UTF-8');
-}
+//     setlocale(LC_MONETARY, 'en_US.UTF-8');
+// }
 function getConnection()
 {
     //database login credentials

@@ -1,7 +1,7 @@
 <?php
 include "keys/cred.php";
 include "databaseConnection.php";
-$dbConn = getConnection($dbPass);
+$dbConn = getConnection();
 
 $sql = "SELECT * FROM adminDash";
 $stmt = $dbConn->prepare($sql);
