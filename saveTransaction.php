@@ -12,19 +12,19 @@ $sql = "INSERT INTO adminDash (uniscoID, employerTaxID, dateOfTrans, name, ssn, 
 $parameters = array();
 $parameters[':uniscoID'] = "U324";
 $parameters[':employerTaxID'] = "WM980001";
-$parameters[':dateOfTrans'] = date("Y/m/d");
+$parameters[':dateOfTrans'] = date("Y-m-d");
 $parameters[':name'] = "Johnny Smith";
 $parameters[':ssn'] = "9009";
 $parameters[':employeeID'] = "10001";
 $parameters[':amtAccessed'] = $_GET['amt'];
 $parameters[':remainingBalance'] = $_GET['remainig'];
-$parameters[':currPayPerEndDate'] = date("Y/m/d");
+$parameters[':currPayPerEndDate'] = date("Y-m-d");
 $parameters[':netAccess'] = "50";
 $parameters[':status'] = $_GET['status'];
 $stmt = $dbConn->prepare($sql);
 try{
 $stmt->execute($parameters);
-}catch (PDOException $e) {
+}catch (Exception $e) {
         echo "Connection failed: " . $e->getMessage();
     }
 ?>
