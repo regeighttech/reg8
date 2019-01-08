@@ -4,6 +4,7 @@ date_default_timezone_set('America/Los_Angeles');
 // include "keys/cred.php";
 
 include "/reg8/databaseConnection.php";
+echo getConnection();
 $dbConn = getConnection();
 
 $sql = 'INSERT INTO adminDash (uniscoID, employerTaxID, dateOfTrans, name, ssn, employeeID, amtAccessed, remainingBalance, currPayPerEndDate, netAccess, status) 
