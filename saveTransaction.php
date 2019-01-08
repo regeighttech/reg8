@@ -21,7 +21,10 @@ $parameters[':remainingBalance'] = $_GET['remainig'];
 $parameters[':currPayPerEndDate'] = date("Y/m/d");
 $parameters[':netAccess'] = "50";
 $parameters[':status'] = $_GET['status'];
+try{
 $stmt = $dbConn->prepare($sql);
 $stmt->execute($parameters);
-
+} catch (PDOException $e) {
+        echo "Connection failed: " . $e->getMessage();
+    }
 ?>
