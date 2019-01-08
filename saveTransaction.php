@@ -9,7 +9,7 @@ include "databaseConnection.php";
 $dbConn = getConnection();
 
 $sql = "INSERT INTO adminDash (logo, uniscoID, employerTaxID, dateOfTrans, name, ssn, employeeID, amtAccessed, remainingBalance, currPayPerEndDate, netAccess, status) 
-		VALUES ("", "", "", "", "", "", "", "", "", "", "", "")";
+		VALUES (" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ")";
 
 $parameters = array();
 $parameters[':uniscoID'] = "U324";
