@@ -3,7 +3,7 @@
 // ini_set("display_errors", 1);
 // date_default_timezone_set('America/Los_Angeles');
 
-include "keys/cred.php";
+// include "keys/cred.php";
 
 include "databaseConnection.php";
 $dbConn = getConnection();
