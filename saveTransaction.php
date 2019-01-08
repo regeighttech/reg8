@@ -14,14 +14,14 @@ $parameters[':uniscoID'] = "U324";
 $parameters[':employerTaxID'] = "WM980001";
 $parameters[':dateOfTrans'] = date("Y/m/d");
 $parameters[':name'] = "Johnny Smith";
-$parameters[':ssn'] = "9009";
+$parameters[':ssn'] = 9009;
 $parameters[':employeeID'] = "10001";
-$parameters[':amtAccessed'] = $_GET['amt'];
-$parameters[':remainingBalance'] = $_GET['remainig'];
+$parameters[':amtAccessed'] = (int)$_GET['amt'];
+$parameters[':remainingBalance'] = (int)$_GET['remainig'];
 $parameters[':currPayPerEndDate'] = date("Y/m/d");
-$parameters[':netAccess'] = "50";
+$parameters[':netAccess'] = 50;
 $parameters[':status'] = $_GET['status'];
 $stmt = $dbConn->prepare($sql);
-// $stmt->execute($parameters);
+$stmt->execute($parameters);
 
 ?>
