@@ -97,7 +97,7 @@
 		<div id = 'bot'>
 		<!-- LOGIN FORM -->
 			<div class = 'col-md-6 '>
-				<div id="login" class = 'panel panel-default' onclick="login()">
+				<div id="login" class = 'panel panel-default' >
 					<div class = 'panel-heading'>
 						<h4>LOG IN</h1>
 					</div>
@@ -107,7 +107,7 @@
 						</br>
 						<input class='form-control' type="password" name="password" placeholder="Password"  id="inputBox">
 						</br>
-						<input class = "btn btn-default" type="submit" value="Login!" id="inputBox"/>
+						<input class = "btn btn-default" type="submit" value="Login!" id="inputBox" onclick="login()"/>
 						 
 						<input class = "btn btn-primary" type="button" value="Not yet a member?" name="CreateAcc"  id="inputBox"/>
 					</div>

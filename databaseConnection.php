@@ -26,7 +26,7 @@ function getConnection()
     $host = "localhost";
     $dbname = "reg8";
     $username = "root";
-    $password = "noToBitcoin";
+    $password = "root";
 
     try {
         $dbConn = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
