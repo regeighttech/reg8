@@ -100,7 +100,7 @@ $transactions = $stmt->fetchAll();
 	        	{
 	        		echo "<tr>";
 	        		echo "<td>" . '<img style="display:block width="10%" height="10%"" src="img/targetLogo.jpeg"/></td>';
-	        		echo "<td>" . $row['uniscoID'] . "</td>";
+	        		echo "<td>U" . $row['transactionID'] . "</td>";
 	        		echo "<td>" . $row['employerTaxID'] . "</td>";
 	        		echo "<td>" . date_format(date_create($row['dateOfTrans']),"m/d/Y") . "</td>";
 	        		echo "<td>" . $row['name'] . "</td>";
