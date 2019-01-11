@@ -3,7 +3,7 @@ include "keys/cred.php";
 include "databaseConnection.php";
 $dbConn = getConnection();
 
-$sql = "SELECT * FROM adminDash";
+$sql = "SELECT * FROM adminDash ORDER BY transactionID DESC LIMIT 1";
 $stmt = $dbConn->prepare($sql);
 $stmt->execute();
 $transactions = $stmt->fetchAll();
