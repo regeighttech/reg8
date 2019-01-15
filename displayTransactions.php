@@ -17,16 +17,6 @@ $stmt = $dbConn->prepare($sql);
 $stmt->execute();
 $transactions = $stmt->fetchAll();
 
-function deleteRecords(){
-	$sql = 'DELETE * FROM adminDash WHERE transactionID <> "1"';
-
-	try{
-	$stmt = $dbConn->prepare($sql);
-	$stmt->execute($parameters);
-	} catch (PDOException $e) {
-	        echo "Connection failed: " . $e->getMessage();
-	    }
-	}
 ?>
 
 <!DOCTYPE HTML>
@@ -87,7 +77,7 @@ function deleteRecords(){
 
 <div>
 <body >
-	<button type="button" onclick="deleteRecords()">Delete Records</button>
+	<button id="deleteButton" type="button">Delete Records</button>
 	<table id="myTable" class="display">
 	    <thead>
 	        <tr>
@@ -147,6 +137,18 @@ function deleteRecords(){
 	$(document).ready( function () {
     $('#myTable').DataTable();
 } );
+
+	$('#deleteButton').click(function() {
+		 $.ajax({
+		  type: "POST",
+		  url: "deleteRecords.php",
+		  data: { id: "1" }
+		}).done(function( msg ) {
+			alert("Records deleted");
+		    location.reload();
+		});    
+
+	 });
 	
 </script>
 
