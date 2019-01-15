@@ -16,6 +16,17 @@ $sql = "SELECT * FROM adminDash";
 $stmt = $dbConn->prepare($sql);
 $stmt->execute();
 $transactions = $stmt->fetchAll();
+
+function deleteRecords(){
+	$sql = 'DELETE * FROM adminDash WHERE transactionID <> "1"';
+
+	try{
+	$stmt = $dbConn->prepare($sql);
+	$stmt->execute($parameters);
+	} catch (PDOException $e) {
+	        echo "Connection failed: " . $e->getMessage();
+	    }
+	}
 ?>
 
 <!DOCTYPE HTML>
@@ -76,7 +87,7 @@ $transactions = $stmt->fetchAll();
 
 <div>
 <body >
-	<button type="button">Click Me!</button>
+	<button type="button" onclick="deleteRecords()">Delete Records</button>
 	<table id="myTable" class="display">
 	    <thead>
 	        <tr>
