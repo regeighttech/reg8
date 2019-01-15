@@ -76,6 +76,7 @@ $transactions = $stmt->fetchAll();
 
 <div>
 <body >
+	<button type="button">Click Me!</button>
 	<table id="myTable" class="display">
 	    <thead>
 	        <tr>
