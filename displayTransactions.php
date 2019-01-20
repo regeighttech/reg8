@@ -106,7 +106,7 @@ $transactions = $stmt->fetchAll();
 	        		$netAccessed = number_format($row['amtAccessed']/$prevBalance,2) * 100;
 
 	        		echo "<tr>";
-	        		echo "<td>" . '<img style="display:block width="10%" height="10%"" src="img/' . $row['logo'] . '.jpeg"/></td>';
+	        		echo "<td>" . '<img style="display:block width="10%" height="10%"" src="img/' . $row['logo'] . '.png"/></td>';
 	        		echo "<td>" . '<img style="display:block width="10%" height="10%"" src="img/targetLogo.jpeg"/></td>';
 	        		echo "<td>U" . $row['transactionID'] . "</td>";
 	        		echo "<td>" . $row['employerTaxID'] . "</td>";
