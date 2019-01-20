@@ -102,7 +102,7 @@ $transactions = $stmt->fetchAll();
 	        	<?php
 	        	foreach($transactions as $row)
 	        	{
-	        		$prevBalance = $row['amtAccessed'] + $row['remainingBalance'];
+	        		$prevBalance = ($row['amtAccessed'] + $row['remainingBalance']) - $row['amtAccessed'];
 	        		$netAccessed = number_format($row['amtAccessed']/$prevBalance,2) * 100;
 
 	        		echo "<tr>";
