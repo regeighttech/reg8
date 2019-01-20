@@ -100,9 +100,10 @@ $transactions = $stmt->fetchAll();
 	    <tbody>
 	       
 	        	<?php
+	        	$prevBalance = 300;
 	        	foreach($transactions as $row)
 	        	{
-	        		$prevBalance = ($row['amtAccessed'] + $row['remainingBalance']) ;
+	        		
 	        		$netAccessed = number_format($row['amtAccessed']/$prevBalance,2) * 100;
 
 	        		echo "<tr>";
@@ -121,6 +122,8 @@ $transactions = $stmt->fetchAll();
 	        		echo "<td>" . $netAccessed . "%</td>";
 	        		echo "<td>" . $row['status'] . "</td>";
 	        		echo "</tr>";
+	        		if($row['status'] != "denied")
+	        			$prevBalance = $prevBalance - $row['amtAccessed'];
 	        	}
 	        	?>
 	            <!-- <td>Row 1 Data 1</td>
