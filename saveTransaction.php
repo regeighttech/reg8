@@ -19,9 +19,10 @@ include "databaseConnection.php";
 $dbConn = getConnection();
 
 $sql = 'INSERT INTO adminDash (logo, uniscoID, employerTaxID, dateOfTrans, name, ssn, employeeID, amtAccessed, remainingBalance, currPayPerEndDate, netAccess, status) 
-		VALUES (" ", :uniscoID, :employerTaxID, :dateOfTrans, :name, :ssn, :employeeID, :amtAccessed, :remainingBalance, :currPayPerEndDate, :netAccess, :status)';
+		VALUES (:logo, :uniscoID, :employerTaxID, :dateOfTrans, :name, :ssn, :employeeID, :amtAccessed, :remainingBalance, :currPayPerEndDate, :netAccess, :status)';
 
 $parameters = array();
+$parameters[':logo'] = $_GET['logo'];
 $parameters[':uniscoID'] = "U324";
 $parameters[':employerTaxID'] = "WM980001";
 $parameters[':dateOfTrans'] = date("Y/m/d");
