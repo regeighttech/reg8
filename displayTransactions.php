@@ -12,7 +12,7 @@ include "keys/cred.php";
 include "databaseConnection.php";
 $dbConn = getConnection($dbPass);
 
-$sql = "SELECT * FROM adminDash";
+$sql = "SELECT * FROM adminDash WHERE transactionID != 1";
 $stmt = $dbConn->prepare($sql);
 $stmt->execute();
 $transactions = $stmt->fetchAll();
@@ -82,12 +82,14 @@ $transactions = $stmt->fetchAll();
 	    <thead>
 	        <tr>
 	            <th>Service Provider Logo</th>
+	            <th>Employer Logo</th>
 	            <th>Unisco ID#</th>
 	            <th>Employer Tax ID#</th>
 	            <th>Date of Transaction</th>
 	            <th>Name</th>
 	            <th>SSN</th>
 	            <th>Employee ID#</th>
+	            <th>Prev. Balance</th>
 	            <th>Amt. Accessed</th>
 	            <th>Remaining Balance</th>
 	            <th>Current Pay Period End Date</th>
@@ -100,7 +102,11 @@ $transactions = $stmt->fetchAll();
 	        	<?php
 	        	foreach($transactions as $row)
 	        	{
+	        		$prevBalance = $row['amtAccessed'] + $row['remainingBalance'];
+	        		$netAccessed = number_format($prevBalance/$row['amtAccessed'],2);
+
 	        		echo "<tr>";
+	        		echo "<td>" . '<img style="display:block width="10%" height="10%"" src="img/' . $row['logo'] . '.jpeg"/></td>';
 	        		echo "<td>" . '<img style="display:block width="10%" height="10%"" src="img/targetLogo.jpeg"/></td>';
 	        		echo "<td>U" . $row['transactionID'] . "</td>";
 	        		echo "<td>" . $row['employerTaxID'] . "</td>";
@@ -108,10 +114,11 @@ $transactions = $stmt->fetchAll();
 	        		echo "<td>" . $row['name'] . "</td>";
 	        		echo "<td>" . $row['ssn'] . "</td>";
 	        		echo "<td>" . $row['employeeID'] . "</td>";
+	        		echo "<td>" . $prevBalance . "</td>";
 	        		echo "<td>$" . $row['amtAccessed'] . "</td>";
 	        		echo "<td>" . $row['remainingBalance'] . "</td>";
 	        		echo "<td>" . date_format(date_create($row['currPayPerEndDate']),"m/d/Y") . "</td>";
-	        		echo "<td>" . $row['netAccess'] . "%</td>";
+	        		echo "<td>" . $netAccessed . "%</td>";
 	        		echo "<td>" . $row['status'] . "</td>";
 	        		echo "</tr>";
 	        	}

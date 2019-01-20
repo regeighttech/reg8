@@ -30,7 +30,7 @@ $parameters[':ssn'] = "9009";
 $parameters[':employeeID'] = "10001";
 $parameters[':amtAccessed'] = $_GET['amt'];
 $parameters[':remainingBalance'] = $_GET['remaining'];
-$parameters[':currPayPerEndDate'] = $endDate;
+$parameters[':currPayPerEndDate'] = date('Y/m/d', $endDate);
 $parameters[':netAccess'] = "50";
 $parameters[':status'] = $_GET['status'];
 try{
