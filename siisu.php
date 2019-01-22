@@ -49,7 +49,6 @@
 
 </head>
 
-<body>
 	<!-- The video -->
 	<video autoplay muted loop id="myVideo">
 	  <source src="rain.mp4" type="video/mp4">
@@ -62,6 +61,8 @@
 	  <!-- Use a button to pause/play the video with JavaScript -->
 	  <button id="myBtn" onclick="myFunction()">Pause</button>
 	</div>
+
+<body>
   <script src="js/scripts.js"></script>
   <script>
 		// Get the video
