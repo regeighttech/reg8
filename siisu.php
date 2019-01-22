@@ -62,10 +62,10 @@
   Your browser does not support HTML5 video.
 </video>
 
-<img src="img/siisu.png" alt="SiiSu Logo">
+<!--<img src="img/siisu.png" alt="SiiSu Logo">
 <img style="position:absolute;
 		right:0;
-		top:0;" src="img/siisu.png" alt="SiiSu Logo">
+		top:0;" src="img/siisu.png" alt="SiiSu Logo">-->
 
 <div class="content">
   <!--<h1>Heading</h1>
