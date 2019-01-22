@@ -51,7 +51,7 @@
 
 	<!-- The video -->
 	<video autoplay muted loop id="myVideo">
-	  <source src="rain.mp4" type="video/mp4">
+	  <source src="city.mp4" type="video/mp4">
 	</video>
 
 	<!-- Optional: some overlay text to describe the video -->
