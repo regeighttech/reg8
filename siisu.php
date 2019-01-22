@@ -48,8 +48,8 @@
 		position:absolute;
 		left:0;
 		top:0;
-    max-width:25px;
-  	max-height:25px;
+    max-width:10%;
+  	max-height:10%;
 	}
 
 
