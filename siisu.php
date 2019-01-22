@@ -48,12 +48,18 @@
 		position:absolute;
 		left:0;
 		top:0;
-		
+
     display:inline-block;
     margin:0;
     min-width:33%;
     height:auto;
 	}
+	img.resize {
+  max-width:50%;
+  max-height:50%;
+	}
+
+
 </style>
 </head>
 <body>
