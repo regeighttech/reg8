@@ -53,10 +53,8 @@
     margin:0;
     min-width:33%;
     height:auto;
-	}
-	img.resize {
-  max-width:50%;
-  max-height:50%;
+    max-width:50%;
+  	max-height:50%;
 	}
 
 
