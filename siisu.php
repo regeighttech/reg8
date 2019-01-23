@@ -52,6 +52,8 @@
 	  	max-height:20%;
 		margin-left: auto;
 		margin-right: auto;
+		    margin-top: auto;
+  margin-bottom: auto;
 	}
 
 	.center {
