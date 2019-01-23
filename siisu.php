@@ -53,13 +53,6 @@
 		vertical-align: middle;
 	}
 
-	.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
-
 
 </style>
 </head>
@@ -71,9 +64,7 @@
 </video>
 
 <!--<img src="img/siisu.png" alt="SiiSu Logo">-->
-<img style="position:absolute;
-		right:0;
-		top:0;" src="img/siisu.png" alt="SiiSu Logo">
+<img src="img/siisu.png" alt="SiiSu Logo">
 
 <div class="content">
   <!--<h1>Heading</h1>
