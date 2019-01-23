@@ -48,7 +48,8 @@
 		position:fixed;
 	    max-width:20%;
 	  	max-height:20%;
-	  	background-position: center center;
+	  	top: 50%;
+		left: 50%;
 	}
 
 
