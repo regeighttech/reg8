@@ -48,8 +48,7 @@
 		position:fixed;
 	    max-width:20%;
 	  	max-height:20%;
-	  	margin-bottom: 50%;
-	  	margin-top: 50%;
+	  	background-position: center center;
 	}
 
 
