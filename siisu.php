@@ -51,8 +51,6 @@
 	  	margin-bottom: 50%;
 	  	margin-top: 50%;*/
 	  position: fixed;
-	  right: 0;
-	  bottom: 0;
 	  max-width: 20%; 
 	  min-height: 20%;
 	}
