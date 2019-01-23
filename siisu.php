@@ -48,9 +48,18 @@
 		position:absolute;
 		left:0;
 		top:0;
-    max-width:20%;
-  	max-height:20%;
+	    max-width:20%;
+	  	max-height:20%;
+		margin-left: auto;
+		margin-right: auto;
 	}
+
+	.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 
 
 </style>
