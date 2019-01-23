@@ -48,8 +48,8 @@
 		position:fixed;
 	    max-width:20%;
 	  	max-height:20%;
-	  	top: 50%;
-		left: 50%;
+	  	top: 45%;
+		left: 40%;
 	}
 
 
