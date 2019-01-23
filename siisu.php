@@ -52,7 +52,7 @@
 	  	margin-top: 50%;*/
 	  position: fixed;
 	  max-width: 20%; 
-	  min-height: 20%;
+	  max-height: 20%;
 	}
 
 
