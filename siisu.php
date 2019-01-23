@@ -48,9 +48,8 @@
 		position:absolute;
 	    max-width:20%;
 	  	max-height:20%;
-		margin-left: auto;
-		margin-right: auto;
-		vertical-align: middle;
+	  	margin-bottom: 50%;
+	  	margin-top: 50%;
 	}
 
 
@@ -64,7 +63,7 @@
 </video>
 
 <!--<img src="img/siisu.png" alt="SiiSu Logo">-->
-<img src="img/siisu.png" alt="SiiSu Logo">
+<center><img src="img/siisu.png" alt="SiiSu Logo"></center>
 
 <div class="content">
   <!--<h1>Heading</h1>
