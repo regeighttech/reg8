@@ -54,6 +54,8 @@
 	  max-width: 20%; 
 	  max-height: 20%;
 	  background-position: center center;
+	  margin-left: auto;
+	  margin-right: auto;
 	}
 
 
