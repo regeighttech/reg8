@@ -159,70 +159,84 @@ $transactions = $stmt->fetchAll();
 				<h1 class="page-header">Dashboard</h1>
 			</div>
 		</div><!--/.row-->
-	<button id="deleteButton" type="button">Delete Records</button>
-	<table id="myTable" class="display">
-	    <thead>
-	        <tr>
-	            <th>Service Provider Logo</th>
-	            <th>Employer Logo</th>
-	            <th>Unisco ID#</th>
-	            <th>Employer Tax ID#</th>
-	            <th>Date of Transaction</th>
-	            <th>Name</th>
-	            <th>SSN</th>
-	            <th>Employee ID#</th>
-	            <th>Prev. Balance</th>
-	            <th>Amt. Accessed</th>
-	            <th>Remaining Balance</th>
-	            <th>Current Pay Period End Date</th>
-	            <th>% Net Access</th>
-	            <th>Status</th>
-	        </tr>
-	    </thead>
-	    <tbody>
-	       
-	        	<?php
-	        	$prevBalance = 300;
-	        	foreach($transactions as $row)
-	        	{
-	        		
-	        		$netAccessed = number_format($row['amtAccessed']/$prevBalance,2) * 100;
+		
 
-	        		echo "<tr>";
-	        		echo "<td>" . '<img style="display:block width="10%" height="10%"" src="img/' . $row['logo'] . '.png"/></td>';
-	        		echo "<td>" . '<img style="display:block width="10%" height="10%"" src="img/targetLogo.jpeg"/></td>';
-	        		echo "<td>U" . $row['transactionID'] . "</td>";
-	        		echo "<td>" . $row['employerTaxID'] . "</td>";
-	        		echo "<td>" . date_format(date_create($row['dateOfTrans']),"m/d/Y") . "</td>";
-	        		echo "<td>" . $row['name'] . "</td>";
-	        		echo "<td>" . $row['ssn'] . "</td>";
-	        		echo "<td>" . $row['employeeID'] . "</td>";
-	        		echo "<td>$" . $prevBalance . "</td>";
-	        		echo "<td>$" . $row['amtAccessed'] . "</td>";
-	        		echo "<td>$" . $row['remainingBalance'] . "</td>";
-	        		echo "<td>" . date_format(date_create($row['currPayPerEndDate']),"m/d/Y") . "</td>";
-	        		echo "<td>" . $netAccessed . "%</td>";
-	        		echo "<td>" . $row['status'] . "</td>";
-	        		echo "</tr>";
-	        		if($row['status'] != "denied")
-	        			$prevBalance = $prevBalance - $row['amtAccessed'];
-	        	}
-	        	?>
-	            <!-- <td>Row 1 Data 1</td>
-	            <td>Row 1 Data 2</td>
-	            <td>Row 1 Data 1</td>
-	            <td>Row 1 Data 2</td>
-	            <td>Row 1 Data 1</td>
-	            <td>Row 1 Data 2</td>
-	            <td>Row 1 Data 1</td>
-	            <td>Row 1 Data 2</td>
-	            <td>Row 1 Data 1</td>
-	            <td>Row 1 Data 2</td>
-	            <td>Row 1 Data 1</td>
-	            <td>Row 1 Data 2</td> -->
-	        
-	    </tbody>
-	</table>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						Transactions Table
+					</div>
+					<div class="panel-body">
+						<div class="canvas-wrapper">
+			<button id="deleteButton" type="button">Delete Records</button>
+			<table id="myTable" class="table table-striped table-bordered">
+						    <thead>
+						        <tr>
+						            <th>Service Provider Logo</th>
+						            <th>Employer Logo</th>
+						            <th>Unisco ID#</th>
+						            <th>Employer Tax ID#</th>
+						            <th>Date of Transaction</th>
+						            <th>Name</th>
+						            <th>SSN</th>
+						            <th>Employee ID#</th>
+						            <th>Prev. Balance</th>
+						            <th>Amt. Accessed</th>
+						            <th>Remaining Balance</th>
+						            <th>Current Pay Period End Date</th>
+						            <th>% Net Access</th>
+						            <th>Status</th>
+						        </tr>
+						    </thead>
+						    <tbody>
+						       
+						        	<?php
+						        	$prevBalance = 300;
+						        	foreach($transactions as $row)
+						        	{
+						        		
+						        		$netAccessed = number_format($row['amtAccessed']/$prevBalance,2) * 100;
+
+						        		echo "<tr>";
+						        		echo "<td>" . '<img style="display:block width="10%" height="10%"" src="img/' . $row['logo'] . '.png"/></td>';
+						        		echo "<td>" . '<img style="display:block width="10%" height="10%"" src="img/targetLogo.jpeg"/></td>';
+						        		echo "<td>U" . $row['transactionID'] . "</td>";
+						        		echo "<td>" . $row['employerTaxID'] . "</td>";
+						        		echo "<td>" . date_format(date_create($row['dateOfTrans']),"m/d/Y") . "</td>";
+						        		echo "<td>" . $row['name'] . "</td>";
+						        		echo "<td>" . $row['ssn'] . "</td>";
+						        		echo "<td>" . $row['employeeID'] . "</td>";
+						        		echo "<td>$" . $prevBalance . "</td>";
+						        		echo "<td>$" . $row['amtAccessed'] . "</td>";
+						        		echo "<td>$" . $row['remainingBalance'] . "</td>";
+						        		echo "<td>" . date_format(date_create($row['currPayPerEndDate']),"m/d/Y") . "</td>";
+						        		echo "<td>" . $netAccessed . "%</td>";
+						        		echo "<td>" . $row['status'] . "</td>";
+						        		echo "</tr>";
+						        		if($row['status'] != "denied")
+						        			$prevBalance = $prevBalance - $row['amtAccessed'];
+						        	}
+						        	?>
+						            <!-- <td>Row 1 Data 1</td>
+						            <td>Row 1 Data 2</td>
+						            <td>Row 1 Data 1</td>
+						            <td>Row 1 Data 2</td>
+						            <td>Row 1 Data 1</td>
+						            <td>Row 1 Data 2</td>
+						            <td>Row 1 Data 1</td>
+						            <td>Row 1 Data 2</td>
+						            <td>Row 1 Data 1</td>
+						            <td>Row 1 Data 2</td>
+						            <td>Row 1 Data 1</td>
+						            <td>Row 1 Data 2</td> -->
+				        </div>
+				    </tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>
 </div>
 <script src="dashboard/js/jquery-1.11.1.min.js"></script>
 	<script src="dashboard/js/bootstrap.min.js"></script>
@@ -231,7 +245,7 @@ $transactions = $stmt->fetchAll();
 	<script src="dashboard/js/easypiechart.js"></script>
 	<script src="dashboard/js/easypiechart-data.js"></script>
 	<script src="dashboard/js/bootstrap-datepicker.js"></script>
-	<script src="jdashboard/s/custom.js"></script>
+	<script src="dashboard/js/custom.js"></script>
 	<script>
 		window.onload = function () {
 	var chart1 = document.getElementById("line-chart").getContext("2d");
