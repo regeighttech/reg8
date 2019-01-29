@@ -36,6 +36,15 @@ $transactions = $stmt->fetchAll();
 	<script src="js/html5shiv.js"></script>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
+	<style>
+		#logo{
+			position:absolute;
+		    max-width:20%;
+		  	max-height:20%;
+		  	top: 0%;
+			left: 0%;
+		}
+	</style>
 </head>
 <body>
 	<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
@@ -46,7 +55,7 @@ $transactions = $stmt->fetchAll();
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span></button>
 				<!--<a class="navbar-brand" href="#"><span>SiiSU</span>Admin</a>-->
-				<img src="img/siisu.png" alt="SiiSu Logo">
+				<img id="logo" src="img/siisu.png" alt="SiiSu Logo">
 				<!--
 				<ul class="nav navbar-top-links navbar-right">
 					<li class="dropdown"><a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
