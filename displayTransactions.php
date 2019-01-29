@@ -39,8 +39,8 @@ $transactions = $stmt->fetchAll();
 	<style>
 		#logo{
 			position:absolute;
-		    max-width:20%;
-		  	max-height:20%;
+		    max-width:85%;
+		  	max-height:85%;
 		  	top: 0%;
 			left: 0%;
 		}
