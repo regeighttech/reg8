@@ -45,7 +45,8 @@ $transactions = $stmt->fetchAll();
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span></button>
-				<a class="navbar-brand" href="#"><span>SiiSU</span>Admin</a>
+				<!--<a class="navbar-brand" href="#"><span>SiiSU</span>Admin</a>-->
+				<img src="img/siisu.png" alt="SiiSu Logo">
 				<!--
 				<ul class="nav navbar-top-links navbar-right">
 					<li class="dropdown"><a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
