@@ -151,7 +151,7 @@ $transactions = $stmt->fetchAll();
 					</a></li>
 				</ul>
 			</li> -->
-			<li><a href="login.html"><em class="fa fa-power-off">&nbsp;</em> Logout</a></li>
+			<li><a href="index.php"><em class="fa fa-power-off">&nbsp;</em> Logout</a></li>
 		</ul>
 	</div><!--/.sidebar-->
 		
