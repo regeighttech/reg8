@@ -211,7 +211,7 @@ $transactions = $stmt->fetchAll();
 						        		echo "<td>$" . $row['amtAccessed'] . "</td>";
 						        		echo "<td>$" . $row['remainingBalance'] . "</td>";
 						        		echo "<td>" . date_format(date_create($row['currPayPerEndDate']),"m/d/Y") . "</td>";
-						        		echo "<td>" . $netAccessed . "%</td>";
+						        		echo "<td>50%</td>";
 						        		echo "<td>" . $row['status'] . "</td>";
 						        		echo "</tr>";
 						        		if($row['status'] != "denied")
