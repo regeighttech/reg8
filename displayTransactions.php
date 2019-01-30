@@ -24,7 +24,7 @@ $transactions = $stmt->fetchAll();
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Lumino - Dashboard</title>
+	<title>SiiSU - Dashboard</title>
 	<link href="dashboard/css/bootstrap.min.css" rel="stylesheet">
 	<link href="dashboard/css/font-awesome.min.css" rel="stylesheet">
 	<link href="dashboard/css/datepicker3.css" rel="stylesheet">
@@ -36,6 +36,15 @@ $transactions = $stmt->fetchAll();
 	<script src="js/html5shiv.js"></script>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
+	<style>
+		#logo{
+			position:absolute;
+		    max-width:85%;
+		  	max-height:85%;
+		  	top: 0%;
+			left: 0%;
+		}
+	</style>
 </head>
 <body>
 	<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
@@ -45,7 +54,9 @@ $transactions = $stmt->fetchAll();
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span></button>
-				<a class="navbar-brand" href="#"><span>Lumino</span>Admin</a>
+				<!--<a class="navbar-brand" href="#"><span>SiiSU</span>Admin</a>-->
+				<img id="logo" src="img/siisu.png" alt="SiiSu Logo">
+				<!--
 				<ul class="nav navbar-top-links navbar-right">
 					<li class="dropdown"><a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
 						<em class="fa fa-envelope"></em><span class="label label-danger">15</span>
@@ -98,7 +109,7 @@ $transactions = $stmt->fetchAll();
 							</a></li>
 						</ul>
 					</li>
-				</ul>
+				</ul> -->
 			</div>
 		</div><!-- /.container-fluid -->
 	</nav>
@@ -140,7 +151,7 @@ $transactions = $stmt->fetchAll();
 					</a></li>
 				</ul>
 			</li> -->
-			<li><a href="login.html"><em class="fa fa-power-off">&nbsp;</em> Logout</a></li>
+			<li><a href="index.php"><em class="fa fa-power-off">&nbsp;</em> Logout</a></li>
 		</ul>
 	</div><!--/.sidebar-->
 		
