@@ -4,103 +4,74 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="UTF-8">
 	<style>
-
-		@charset "UTF-8";
-
-		.contact-panel-button {
-		  background: #0a0a0a;
-		  color: #fefefe;
-		  width: auto;
-		  padding: 0.25rem 1.25rem;
+		@import "https://fonts.googleapis.com/css?family=Raleway";
+		* { box-sizing: border-box; }
+		body { 
+		  margin: 0; 
+		  padding: 0; 
+		  background: #333;
+		  font-family: Raleway; 
+		  text-transform: uppercase; 
+		  font-size: 11px; 
+		}
+		h1{ margin: 0; }
+		#contact { 
+		  -webkit-user-select: none; /* Chrome/Safari */        
+		  -moz-user-select: none; /* Firefox */
+		  -ms-user-select: none; /* IE10+ */
+		  margin: 4em auto;
+		  width: 100px; 
+		  height: 30px; 
+		  line-height: 30px;
+		  background: teal;
+		  color: white;
+		  font-weight: 700;
 		  text-align: center;
-		  position: absolute;
-		  top: -30px;
-		  right: 20px;
-		  transition: background 0.25s ease-in-out;
+		  cursor: pointer;
+		  border: 1px solid white;
 		}
 
-		.contact-panel-button:after {
-		  content: "⥣";
-		  margin-left: 5px;
-		}
+		#contact:hover { background: #666; }
+		#contact:active { background: #444; }
 
-		.contact-panel-button:hover {
-		  background: #242424;
-		  color: #f0f0f0;
-		}
+		#contactForm { 
+		  display: none;
 
-		.is-active .contact-panel-button:after {
-		  content: "⥥";
-		}
-
-		.contact-panel {
-		  padding: 1rem;
-		  z-index: 1;
-		  background: #0a0a0a;
-		  width: 350px;
-		  height: 375px;
+		  border: 6px solid salmon; 
+		  padding: 2em;
+		  width: 400px;
+		  text-align: center;
+		  background: #fff;
 		  position: fixed;
-		  bottom: -375px;
-		  right: 20px;
-		  transition: bottom 0.5s ease-in-out;
+		  top:50%;
+		  left:50%;
+		  transform: translate(-50%,-50%);
+		  -webkit-transform: translate(-50%,-50%)
+		  
 		}
 
-		.contact-panel label {
-		  color: #fefefe;
-		  width: 100%;
+		input, textarea { 
+		  margin: .8em auto;
+		  font-family: inherit; 
+		  text-transform: inherit; 
+		  font-size: inherit;
+		  
+		  display: block; 
+		  width: 280px; 
+		  padding: .4em;
 		}
+		textarea { height: 80px; resize: none; }
 
-		.contact-panel input[type="text"],
-		.contact-panel input[type="email"],
-		.contact-panel textarea {
-		  background: #303030;
-		  border: #0a0a0a;
-		  transition: background 0.3s ease-in-out;
-		}
-
-		.contact-panel input[type="text"]:focus,
-		.contact-panel input[type="email"]:focus,
-		.contact-panel textarea:focus {
-		  background: #fefefe;
-		}
-
-		.contact-panel .contact-panel-actions {
-		  display: -webkit-flex;
-		  display: -ms-flexbox;
-		  display: flex;
-		  -webkit-justify-content: flex-end;
-		      -ms-flex-pack: end;
-		          justify-content: flex-end;
-		  -webkit-align-items: center;
-		      -ms-flex-align: center;
-		          align-items: center;
-		}
-
-		.contact-panel .submit-button {
-		  margin-bottom: 0;
-		}
-
-		.contact-panel .cancel-button {
-		  margin-bottom: 0;
-		  padding: 0.75rem 1rem;
-		  color: #fefefe;
-		  transition: background 0.25s ease-in-out;
-		}
-
-		.contact-panel .cancel-button:hover {
-		  background: #242424;
-		  color: #f0f0f0;
-		}
-
-		.contact-panel.is-active {
-		  bottom: 0;
-		}
-
-		@media screen and (max-width: 39.9375em) {
-		  .contact-panel {
-		    width: 100%;
-		    right: 0;
-		  }
+		.formBtn { 
+		  width: 140px;
+		  display: inline-block;
+		  
+		  background: teal;
+		  color: #fff;
+		  font-weight: 100;
+		  font-size: 1.2em;
+		  border: none;
+		  height: 30px;
 		}
 
 
@@ -211,28 +182,20 @@
 	</div>
 
 	<!-- Contact Us form-->
-	<div class="contact-panel" id="contact-panel" data-toggler=".is-active">
-	  <a class="contact-panel-button" data-toggle="contact-panel">Contact us</a>
-	  <form action="">
-	    <div class="row">
-	      <label>Full name *
-	        <input type="text" placeholder="Full name">
-	      </label>
-	    </div>
-	    <div class="row">
-	      <label>Email *
-	        <input type="email" placeholder="Email address">
-	      </label>
-	    </div>
-	    <div class="row">
-	      <label>Message *
-	        <textarea placeholder="Describe your needs" rows="3"></textarea>
-	      </label>
-	    </div>
-	    <div class="contact-panel-actions">
-	      <button class="cancel-button" data-toggle="contact-panel">Nevermind</button>
-	      <input type="submit" class="button submit-button" value="Submit">
-	    </div>
+	<div id="contact">Contact</div>
+
+	<div id="contactForm">
+
+	  <h1>Keep in touch!</h1>
+	  <small>I'll get back to you as quickly as possible</small>
+	  
+	  <form action="#">
+	    <input placeholder="Name" type="text" required />
+	    <input placeholder="Email" type="email" required />
+	    <input placeholder="Subject" type="text" required />
+	    <textarea placeholder="Comment"></textarea>
+	    <input class="formBtn" type="submit" />
+	    <input class="formBtn" type="reset" />
 	  </form>
 	</div>
 
@@ -250,14 +213,22 @@
 	  }
 	}
 
-	// closes the panel on click outside
-	$(document).mouseup(function (e) {
-	  var container = $('#contact-panel');
-	  if (!container.is(e.target) // if the target of the click isn't the container...
-	  && container.has(e.target).length === 0) // ... nor a descendant of the container
+	$(function() {
+	  
+	  // contact form animations
+	  $('#contact').click(function() {
+	    $('#contactForm').fadeToggle();
+	  })
+	  $(document).mouseup(function (e) {
+	    var container = $("#contactForm");
+
+	    if (!container.is(e.target) // if the target of the click isn't the container...
+	        && container.has(e.target).length === 0) // ... nor a descendant of the container
 	    {
-	      container.removeClass('is-active');
+	        container.fadeOut();
 	    }
+	  });
+	  
 	});
 
 
