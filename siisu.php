@@ -29,7 +29,7 @@
 		  background: rgba(0, 0, 0, 0.5);
 		  color: #f1f1f1;
 		  width: 100%;
-		  padding: 20px;
+		  padding: 25px;
 		}
 
 		#myBtn {
@@ -41,7 +41,7 @@
 		  color: #fff;
 		  cursor: pointer;
 		  right: 41%;
-		  bottom: 0%;
+		  bottom: 10%;
 		  position: absolute;
 		}
 
