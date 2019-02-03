@@ -14,10 +14,12 @@
 		}
 
 		#myVideo {
-		  position: fixed;
+		  position: relative;
 		  right: 0;
 		  bottom: 0;
-		  min-width: 100%; 
+		  max-width: 100%; 
+		  max-height: 100%;
+		  min-width: 100%;
 		  min-height: 100%;
 		}
 
@@ -39,6 +41,8 @@
 		  background: #000;
 		  color: #fff;
 		  cursor: pointer;
+		  right: 41%;
+		  position: absolute;
 		}
 
 		#myBtn:hover {
