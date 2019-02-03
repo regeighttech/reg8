@@ -24,6 +24,7 @@
 		.content {
 		  position: fixed;
 		  bottom: 0;
+		  left:45%;
 		  background: rgba(0, 0, 0, 0.5);
 		  color: #f1f1f1;
 		  width: 100%;
@@ -38,7 +39,6 @@
 		  background: #000;
 		  color: #fff;
 		  cursor: pointer;
-		  left:45%;
 		}
 
 		#myBtn:hover {
@@ -68,6 +68,14 @@
 		  	max-height:10%;
 		  	top: 0%;
 			left: 0%;
+		}
+
+		html { 
+		  background: url(city.mp4) no-repeat center center fixed; 
+		  -webkit-background-size: cover;
+		  -moz-background-size: cover;
+		  -o-background-size: cover;
+		  background-size: cover;
 		}
 
 
