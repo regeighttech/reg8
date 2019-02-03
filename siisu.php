@@ -47,24 +47,24 @@
 
 		#center{
 			position:fixed;
-		    max-width:20%;
-		  	max-height:20%;
+		    max-width:25%;
+		  	max-height:25%;
 		  	top: 45%;
 			left: 40%;
 		}
 
 		#topRight{
 			position:fixed;
-		    max-width:20%;
-		  	max-height:20%;
+		    max-width:10%;
+		  	max-height:10%;
 		  	top: 0%;
-			right: 80%;
+			right: 0%;
 		}
 
 		#topLeft{
 			position:fixed;
-		    max-width:20%;
-		  	max-height:20%;
+		    max-width:10%;
+		  	max-height:10%;
 		  	top: 0%;
 			left: 0%;
 		}
