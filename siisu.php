@@ -199,8 +199,8 @@
 		    <input placeholder="Name" name="name" type="text" required />
 		    <input placeholder="Email" name="email" type="email" required />
 		    <input placeholder="Mobile" name="mobile" type="text" required />
-		    <textarea placeholder="Notes" name="notes"></textarea>
-		    <input class="formBtn" type="submit" />
+		    <textarea placeholder="Notes" name="notes" required></textarea>
+		    <input name="submit" class="formBtn" type="submit" />
 		    <input class="formBtn" type="reset" />
 		  </form>
 		</div>
