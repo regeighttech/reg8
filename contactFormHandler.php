@@ -21,7 +21,7 @@
 	    $errors .= "\n Error: Invalid email address";
 	}
 
-	if( empty($errors))
+	else( empty($errors))
 	{
 	$to = $myemail;
 	$email_subject = "Contact form submission: $name";
