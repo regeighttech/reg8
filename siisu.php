@@ -221,7 +221,7 @@
 	$(function() {
 	  
 	  // contact form animations
-	  $('#contact').click(function() {
+	  $('#myBtn').click(function() {
 	    $('#contactForm').fadeToggle();
 	  })
 	  $(document).mouseup(function (e) {
