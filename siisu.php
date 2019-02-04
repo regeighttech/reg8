@@ -37,11 +37,11 @@
 		#contactForm { 
 		  display: none;
 
-		  border: 6px solid salmon; 
+		  border: 6px solid #303030; 
 		  padding: 2em;
 		  width: 400px;
 		  text-align: center;
-		  background: #fff;
+		  background: #0a0a0a;
 		  position: fixed;
 		  top:50%;
 		  left:50%;
@@ -59,6 +59,8 @@
 		  display: block; 
 		  width: 280px; 
 		  padding: .4em;
+		  background: #303030;
+    	  border: none;
 		}
 		textarea { height: 80px; resize: none; }
 
@@ -66,7 +68,7 @@
 		  width: 140px;
 		  display: inline-block;
 		  
-		  background: teal;
+		  background: #303030;
 		  color: #fff;
 		  font-weight: 100;
 		  font-size: 1.2em;
@@ -104,6 +106,7 @@
 		  color: #f1f1f1;
 		  width: 100%;
 		  padding: 30px;
+		  text-align: center;
 		}
 
 		#myBtn {
@@ -128,7 +131,7 @@
 			position:fixed;
 		    max-width:25%;
 		  	max-height:25%;
-		  	top: 45%;
+		  	top: 40%;
 			left: 39.5%;
 		}
 
