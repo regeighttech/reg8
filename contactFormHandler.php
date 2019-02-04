@@ -17,6 +17,5 @@
 			echo "Something went wrong!";
 		}
 
-		}
 	}
 ?>
