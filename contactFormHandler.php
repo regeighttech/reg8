@@ -1,37 +1,78 @@
 <?php
-	$errors = '';
-	$myemail = 'br3psi@siisu.org';//<-----Put Your email address here.
-	if(empty($_POST['name'])  || 
-	   empty($_POST['email']) || 
-	   empty($_POST['mobile']) ||
-	   empty($_POST['notes']))
-	{
-	    $errors .= "\n Error: all fields are required";
-	}
+/*
+This first bit sets the email address that you want the form to be submitted to.
+You will need to change this value to a valid email address that you can access.
+*/
+$webmaster_email = "br3psi@siisu.org";
 
-	$name = $_POST['name']; 
-	$email_address = $_POST['email']; 
-	$mobile = $_POST['mobile'];
-	$notes = $_POST['notes']; 
+/*
+This bit sets the URLs of the supporting pages.
+If you change the names of any of the pages, you will need to change the values here.
+*/
+$feedback_page = "siisu.org";
+$error_page = "siisu.org";
+$thankyou_page = "siisu.org";
 
-	if (!preg_match(
-	"/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/i", 
-	$email_address))
-	{
-	    $errors .= "\n Error: Invalid email address";
-	}
+/*
+This next bit loads the form field data into variables.
+If you add a form field, you will need to add it here.
+*/
+$email_address = $_REQUEST['email'] ;
+$comments = $_REQUEST['notes'] ;
+$first_name = $_REQUEST['name'] ;
+$mobile = $_REQUEST['mobile'];
+$msg = 
+"Name: " . $first_name . "\r\n" . 
+"Email: " . $email_address . "\r\n" . 
+"Mobile: " . $mobile . "\r\n" .
+"Comments: " . $comments ;
 
-	else( empty($errors))
-	{
-	$to = $myemail;
-	$email_subject = "Contact form submission: $name";
-	$email_body = "You have received a new message. ".
-	" Here are the details:\n Name: $name \n ".
-	"Email: $email_address \nMobile: $mobile \nNotes \n$notes";
-	$headers = "From: $myemail\n";
-	$headers .= "Reply-To: $email_address";
-	mail($to,$email_subject,$email_body,$headers);
-	//redirect to the 'thank you' page
-	header('Location: ../siisu.php');
+/*
+The following function checks for email injection.
+Specifically, it checks for carriage returns - typically used by spammers to inject a CC list.
+*/
+function isInjected($str) {
+	$injections = array('(\n+)',
+	'(\r+)',
+	'(\t+)',
+	'(%0A+)',
+	'(%0D+)',
+	'(%08+)',
+	'(%09+)'
+	);
+	$inject = join('|', $injections);
+	$inject = "/$inject/i";
+	if(preg_match($inject,$str)) {
+		return true;
 	}
+	else {
+		return false;
+	}
+}
+
+// If the user tries to access this script directly, redirect them to the feedback form,
+if (!isset($_REQUEST['email'])) {
+header( "Location: $feedback_page" );
+}
+
+// If the form fields are empty, redirect to the error page.
+elseif (empty($first_name) || empty($email_address)) {
+header( "Location: $error_page" );
+}
+
+/* 
+If email injection is detected, redirect to the error page.
+If you add a form field, you should add it here.
+*/
+elseif ( isInjected($email_address) || isInjected($first_name)  || isInjected($comments) ) {
+header( "Location: $error_page" );
+}
+
+// If we passed all previous tests, send the email then redirect to the thank you page.
+else {
+
+	mail( "$webmaster_email", "Feedback Form Results", $msg );
+
+	header( "Location: $thankyou_page" );
+}
 ?>
