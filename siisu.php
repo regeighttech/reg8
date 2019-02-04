@@ -154,7 +154,7 @@
 		}
 
 		html { 
-		  background: url(city.mp4) no-repeat center center fixed; 
+		  background: url(reg8/city.mp4) no-repeat center center fixed; 
 		  -webkit-background-size: cover;
 		  -moz-background-size: cover;
 		  -o-background-size: cover;
@@ -168,16 +168,16 @@
 <body>
 
 	<video autoplay muted loop id="myVideo">
-	  <source src="city.mp4" type="video/mp4">
+	  <source src="reg8/city.mp4" type="video/mp4">
 	  Your browser does not support HTML5 video.
 	</video>
 
 	<!--<img src="img/siisu.png" alt="SiiSu Logo">-->
-	<img id="center" src="img/SiiSUBlueWhite.svg" alt="SiiSu Logo">
+	<img id="center" src="reg8/img/SiiSUBlueWhite.svg" alt="SiiSu Logo">
 
 	<!--<img id="topRight" src="img/SiiSUBlueBlack.png" alt="SiiSu Logo">-->
 
-	<img id="topLeft" src="img/SiiSUBlueWhite.svg" alt="SiiSu Logo">
+	<img id="topLeft" src="reg8/img/SiiSUBlueWhite.svg" alt="SiiSu Logo">
 
 	<!--<div class="content">
 	  <h1>Heading</h1>
@@ -195,7 +195,7 @@
 		  <h1>Keep in touch!</h1>
 		  <small>I'll get back to you as quickly as possible</small>
 		  
-		  <form method="post" name="contact_form" action="contactFormHandler.php">
+		  <form method="post" name="contact_form" action="reg8/contactFormHandler.php">
 		    <input placeholder="Name" name="name" type="text" required />
 		    <input placeholder="Email" name="email" type="email" required />
 		    <input placeholder="Mobile" name="mobile" type="text" required />
