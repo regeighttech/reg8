@@ -132,6 +132,7 @@
 			left: 40%;
 		}
 
+		/*
 		#topRight{
 			position:fixed;
 		    max-width:10%;
@@ -139,6 +140,7 @@
 		  	top: 0%;
 			right: 0%;
 		}
+		*/
 
 		#topLeft{
 			position:fixed;
@@ -168,9 +170,9 @@
 	</video>
 
 	<!--<img src="img/siisu.png" alt="SiiSu Logo">-->
-	<img id="center" src="img/siisu.png" alt="SiiSu Logo">
+	<img id="center" src="img/SiiSUBlueWhite.svg" alt="SiiSu Logo">
 
-	<img id="topRight" src="img/SiiSUBlueBlack.png" alt="SiiSu Logo">
+	<!--<img id="topRight" src="img/SiiSUBlueBlack.png" alt="SiiSu Logo">-->
 
 	<img id="topLeft" src="img/SiiSUBlueWhite.svg" alt="SiiSu Logo">
 
