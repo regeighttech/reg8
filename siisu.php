@@ -129,7 +129,7 @@
 		    max-width:25%;
 		  	max-height:25%;
 		  	top: 45%;
-			left: 40%;
+			left: 39.5%;
 		}
 
 		/*
@@ -176,29 +176,32 @@
 
 	<img id="topLeft" src="img/SiiSUBlueWhite.svg" alt="SiiSu Logo">
 
-	<div class="content">
-	  <!--<h1>Heading</h1>
+	<!--<div class="content">
+	  <h1>Heading</h1>
 	  <p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum cu recteque expetendis neglegentur. Cu mentitum maiestatis persequeris pro, pri ponderum tractatos ei. Id qui nemore latine molestiae, ad mutat oblique delicatissimi pro.</p>
-	  <button id="myBtn" onclick="myFunction()">Pause</button>-->
+	  <button id="myBtn" onclick="myFunction()">Pause</button>
 	  <button id="myBtn">Contact Us</button>
-	</div>
+	</div>-->
 
-	<!-- Contact Us form-->
-	<div id="contact">Contact</div>
+	<div class="content">
+		<!-- Contact Us form-->
+		<div id="myBtn">Contact US</div>
 
-	<div id="contactForm">
+		<div id="contactForm">
 
-	  <h1>Keep in touch!</h1>
-	  <small>I'll get back to you as quickly as possible</small>
-	  
-	  <form action="#">
-	    <input placeholder="Name" type="text" required />
-	    <input placeholder="Email" type="email" required />
-	    <input placeholder="Subject" type="text" required />
-	    <textarea placeholder="Comment"></textarea>
-	    <input class="formBtn" type="submit" />
-	    <input class="formBtn" type="reset" />
-	  </form>
+		  <h1>Keep in touch!</h1>
+		  <small>I'll get back to you as quickly as possible</small>
+		  
+		  <form action="#">
+		    <input placeholder="Name" type="text" required />
+		    <input placeholder="Email" type="email" required />
+		    <input placeholder="Subject" type="text" required />
+		    <textarea placeholder="Comment"></textarea>
+		    <input class="formBtn" type="submit" />
+		    <input class="formBtn" type="reset" />
+		  </form>
+		</div>
+
 	</div>
 
 	<script>
