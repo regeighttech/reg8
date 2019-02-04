@@ -11,7 +11,7 @@
 		$headers = "From: " . $email;
 
 		if(mail($to, $subject, $message, $headers)){
-			header("Location: ..index.php");
+			header("Location: ../index.php");
 		}
 		else{
 			echo "Something went wrong!";
