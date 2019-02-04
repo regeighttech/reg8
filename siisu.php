@@ -117,7 +117,7 @@
 		  background: #000;
 		  color: #fff;
 		  cursor: pointer;
-		  right: 41%;
+		  right: 43%;
 		  bottom: 20%;
 		  position: absolute;
 		}
@@ -131,8 +131,8 @@
 			position:fixed;
 		    max-width:25%;
 		  	max-height:25%;
-		  	top: 40%;
-			left: 39.5%;
+		  	top: 35%;
+			left: 37%;
 		}
 
 		/*
@@ -195,11 +195,11 @@
 		  <h1>Keep in touch!</h1>
 		  <small>I'll get back to you as quickly as possible</small>
 		  
-		  <form action="#">
-		    <input placeholder="Name" type="text" required />
-		    <input placeholder="Email" type="email" required />
-		    <input placeholder="Subject" type="text" required />
-		    <textarea placeholder="Comment"></textarea>
+		  <form method="post" name="contact_form" action="contactFormHandler.php">
+		    <input placeholder="Name" name="name" type="text" required />
+		    <input placeholder="Email" name="email" type="email" required />
+		    <input placeholder="Mobile" name="mobile" type="text" required />
+		    <textarea placeholder="Notes" name="notes"></textarea>
 		    <input class="formBtn" type="submit" />
 		    <input class="formBtn" type="reset" />
 		  </form>
@@ -208,6 +208,13 @@
 	</div>
 
 	<script>
+	var frmvalidator  = new Validator("contactform");
+	frmvalidator.addValidation("name","req","Please provide your name");
+	frmvalidator.addValidation("email","req","Please provide your email");
+	frmvalidator.addValidation("email","email",
+	  "Please enter a valid email address");
+
+
 	var video = document.getElementById("myVideo");
 	var btn = document.getElementById("myBtn");
 
