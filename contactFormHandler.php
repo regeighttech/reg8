@@ -9,9 +9,9 @@ $webmaster_email = "br3psi@siisu.org";
 This bit sets the URLs of the supporting pages.
 If you change the names of any of the pages, you will need to change the values here.
 */
-$feedback_page = "../../siisu.org";
-$error_page = "../../siisu.org";
-$thankyou_page = "../../siisu.org";
+$feedback_page = "../index.php";
+$error_page = "../index.php";
+$thankyou_page = "../index.php";
 
 /*
 This next bit loads the form field data into variables.
