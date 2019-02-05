@@ -74,6 +74,9 @@
 		  font-size: 1.2em;
 		  border: none;
 		  height: 30px;
+		  vertical-align: middle;
+		  text-align: center;
+		  padding: 0px;
 		}
 
 
