@@ -59,7 +59,7 @@
 		  display: block; 
 		  width: 280px; 
 		  padding: .4em;
-		  background: #303030;
+		  background: white;
     	  border: none;
 		}
 		textarea { height: 80px; resize: none; }
@@ -173,7 +173,7 @@
 	</video>
 
 	<!--<img src="img/siisu.png" alt="SiiSu Logo">-->
-	<img id="center" src="reg8/img/SiiSUBlueWhite.svg" alt="SiiSu Logo">
+	<img id="center" src="reg8/img/SiiSUFinal.png" alt="SiiSu Logo">
 
 	<!--<img id="topRight" src="img/SiiSUBlueBlack.png" alt="SiiSu Logo">-->
 
@@ -191,9 +191,11 @@
 		<div id="myBtn">Contact US</div>
 
 		<div id="contactForm">
-
-		  <h1>Keep in touch!</h1>
-		  <small>I'll get back to you as quickly as possible</small>
+		  <img id="contactUsImage" src="reg/img/contactUs.png" alt="Contact Us image">
+		  <h1>ENQUIRIES AND FEEDBACK</h1>
+		  <small>For all written feedback and general enquiries, please get in touch:</small>
+		  <small>US customers: (866) 278-6661</small>
+		  <small>Gaydon Headquarters Switchboard: +44 (0)1926644644</small>
 		  
 		  <form method="post" name="contact_form" action="reg8/contactFormHandler.php">
 		    <input placeholder="Name" name="name" type="text" required />
