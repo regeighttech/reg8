@@ -196,7 +196,7 @@
 		<div id="myBtn">Contact Us</div>
 
 		<div id="contactForm">
-		  <img id="contactUsImage" src="reg/img/contactUs.png" alt="Contact Us image">
+		  <img id="contactUsImage" src="reg8/img/contactUs.png" alt="Contact Us image">
 		  <h1>ENQUIRIES AND FEEDBACK</h1>
 		  <p>For all written feedback and general enquiries, please get in touch:</p>
 		  <p>US customers: (866) 278-6661</p>
