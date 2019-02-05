@@ -85,7 +85,7 @@
 
 		body {
 		  margin: 0;
-		  font-family: Garamond;
+		  font-family: Courier;
 		  font-size: 17px;
 		}
 
@@ -197,7 +197,7 @@
 
 		<div id="contactForm">
 		  <img id="contactUsImage" src="reg8/img/contactUs.png" alt="Contact Us image">
-		  <h1>ENQUIRIES AND FEEDBACK</h1>
+		  <p>ENQUIRIES AND FEEDBACK</p>
 		  <p>For all written feedback and general enquiries, please get in touch:</p>
 		  <p>US customers: (866) 278-6661</p>
 		  <p>Gaydon Headquarters Switchboard: +44 (0)1926644644</p>
