@@ -161,12 +161,9 @@
 			left: 0%;
 		}
 
-		html { 
-		  background: url(reg8/city.mp4) no-repeat center center fixed; 
-		  -webkit-background-size: cover;
-		  -moz-background-size: cover;
-		  -o-background-size: cover;
-		  background-size: cover;
+		#contactUsForm{
+			background: black;
+			
 		}
 
 
@@ -205,7 +202,7 @@
 		  <p>US customers: (866) 278-6661</p>
 		  <p>Gaydon Headquarters Switchboard: +44 (0)1926644644</p>
 		  
-		  <form method="post" name="contact_form" action="reg8/contactFormHandler.php">
+		  <form id="contactUsForm" method="post" name="contact_form" action="reg8/contactFormHandler.php">
 		    <input placeholder="Name" name="name" type="text" required />
 		    <input placeholder="Email" name="email" type="email" required />
 		    <input placeholder="Mobile" name="mobile" type="text" required />
