@@ -212,8 +212,6 @@
 		  <img id="contactUsImage" src="reg8/img/contactUs.png" alt="Contact Us image">
 		  <p>ENQUIRIES AND FEEDBACK</p>
 		  <p>For all written feedback and general enquiries, please get in touch:</p>
-		  <p>US customers: (866) 278-6661</p>
-		  <p>Gaydon Headquarters Switchboard: +44 (0)1926644644</p>
 		  
 		  <form id="contactUsForm" method="post" name="contact_form" action="reg8/contactFormHandler.php">
 		    <input placeholder="Name" name="name" type="text" required />
