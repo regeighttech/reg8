@@ -11,7 +11,7 @@
 		  padding: 0; 
 		  background: #333;
 		  font-family: Raleway; 
-		  text-transform: uppercase; 
+		  /*text-transform: uppercase; */
 		  font-size: 11px; 
 		}
 		h1{ margin: 0; }
@@ -85,7 +85,7 @@
 
 		body {
 		  margin: 0;
-		  font-family: Arial;
+		  font-family: Garamond;
 		  font-size: 17px;
 		}
 
@@ -97,6 +97,11 @@
 		  max-height: 100%;
 		  min-width: 100%;
 		  min-height: 100%;
+		}
+
+		#contactUsImage{
+			max-width: 100%;
+    		max-height: 100%;
 		}
 
 		.content {
@@ -188,14 +193,14 @@
 
 	<div class="content">
 		<!-- Contact Us form-->
-		<div id="myBtn">Contact US</div>
+		<div id="myBtn">Contact Us</div>
 
 		<div id="contactForm">
 		  <img id="contactUsImage" src="reg/img/contactUs.png" alt="Contact Us image">
 		  <h1>ENQUIRIES AND FEEDBACK</h1>
-		  <small>For all written feedback and general enquiries, please get in touch:</small>
-		  <small>US customers: (866) 278-6661</small>
-		  <small>Gaydon Headquarters Switchboard: +44 (0)1926644644</small>
+		  <p>For all written feedback and general enquiries, please get in touch:</p>
+		  <p>US customers: (866) 278-6661</p>
+		  <p>Gaydon Headquarters Switchboard: +44 (0)1926644644</p>
 		  
 		  <form method="post" name="contact_form" action="reg8/contactFormHandler.php">
 		    <input placeholder="Name" name="name" type="text" required />
