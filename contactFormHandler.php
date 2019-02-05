@@ -5,7 +5,7 @@
 		$mobile = $_POST['mobile'];
 		$notes = $_POST['notes'];
 
-		$to='brayannereyes12@gmail.com';
+		$to='ibarrajkey@gmail.com';
 		$subject = 'Contact Us Form Submission';
 		$message = "Name: " . $name . "\n" . "Email: " . $email . "\n" . "Mobile: " . $mobile . "\n" . "Notes: " . $notes;
 		$headers = "From: " . $email;
