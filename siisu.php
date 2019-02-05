@@ -36,18 +36,29 @@
 
 		#contactForm { 
 		  display: none;
-
 		  border: 6px solid #303030; 
 		  padding: 2em;
 		  width: 400px;
 		  text-align: center;
-		  background: #0a0a0a;
+		  background: white;
 		  position: fixed;
 		  top:50%;
 		  left:50%;
 		  transform: translate(-50%,-50%);
 		  -webkit-transform: translate(-50%,-50%)
-		  
+		}
+
+		#contactForm input[type="text"],
+		#contactForm input[type="email"]{
+		  background: #303030;
+		  border: #0a0a0a;
+		  transition: background 0.3s ease-in-out;
+		}
+
+		#contactForm input[type="text"]:focus,
+		#contactForm input[type="email"]:focus,
+		#contactForm textarea:focus {
+		  background: #fefefe;
 		}
 
 		input, textarea { 
@@ -59,7 +70,7 @@
 		  display: block; 
 		  width: 280px; 
 		  padding: .4em;
-		  background: white;
+		  background: #303030;
     	  border: none;
 		}
 		textarea { height: 80px; resize: none; }
@@ -111,7 +122,7 @@
 		  position: fixed;
 		  bottom: 0;
 		  background: rgba(0, 0, 0, 0.5);
-		  color: #f1f1f1;
+		  color: #black;
 		  width: 100%;
 		  padding: 30px;
 		  text-align: center;
@@ -163,7 +174,9 @@
 
 		#contactUsForm{
 			background: black;
-			
+			margin: 10px;
+    		padding: 1px;
+
 		}
 
 
