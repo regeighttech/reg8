@@ -36,7 +36,7 @@ $mail->SMTPAuth = true;     // turn on SMTP authentication
 $mail->Username = $hostEmail;  // SMTP username
 $mail->Password = $mailPass; // SMTP password
 $mail->SMTPSecure = 'tls';
-$mail->Port     = 25;
+$mail->Port     = 587;
 
 $mail->From = $hostEmail;
 $mail->FromName = "Pedro Salinas Ibarra";
