@@ -31,12 +31,12 @@ use PHPMailer\PHPMailer\Exception;
 $mail = new PHPMailer();
 
 // $mail->IsSMTP();                                      // set mailer to use SMTP
-$mail->Host = "smtp.gmail.com";  // specify main and backup server
+$mail->Host = "siisu.org";  // specify main and backup server
 $mail->SMTPAuth = true;     // turn on SMTP authentication
 $mail->Username = $hostEmail;  // SMTP username
 $mail->Password = $mailPass; // SMTP password
 $mail->SMTPSecure = 'tls';
-$mail->Port     = 587;
+$mail->Port     = 25;
 
 $mail->From = $hostEmail;
 $mail->FromName = "Pedro Salinas Ibarra";
