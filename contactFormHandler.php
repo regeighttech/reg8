@@ -21,7 +21,7 @@
  
 require("PHPMailer/src/PHPMailer.php");
 
-$mail = new PHPMailer();
+// $mail = new PHPMailer();
 
 // $mail->IsSMTP();                                      // set mailer to use SMTP
 // $mail->Host = "smtp.gmail.com";  // specify main and backup server
