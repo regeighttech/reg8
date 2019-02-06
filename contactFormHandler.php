@@ -46,9 +46,9 @@ $mail->WordWrap = 50;                                 // set word wrap to 50 cha
 // $mail->AddAttachment("/tmp/image.jpg", "new.jpg");    // optional name
 $mail->IsHTML(true);                                  // set email format to HTML
 
-$mail->Subject = "Subject";
-$mail->Body    = "This is the HTML message body in bold!";
-$mail->AltBody = "This is the body in plain text for non-HTML mail clients";
+$mail->Subject = "";
+$mail->Body    = "This is the HTML researched";
+// $mail->AltBody = "This is the body in plain text for non-HTML mail clients";
 
 if(!$mail->Send())
 {
