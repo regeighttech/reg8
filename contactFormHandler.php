@@ -30,7 +30,7 @@ use PHPMailer\PHPMailer\Exception;
 
 $mail = new PHPMailer();
 
-$mail->IsSMTP();                                      // set mailer to use SMTP
+// $mail->IsSMTP();                                      // set mailer to use SMTP
 $mail->Host = "smtp.gmail.com";  // specify main and backup server
 $mail->SMTPAuth = true;     // turn on SMTP authentication
 $mail->Username = $hostEmail;  // SMTP username
