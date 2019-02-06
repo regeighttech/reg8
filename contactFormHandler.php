@@ -28,7 +28,7 @@ require 'PHPMailer/src/SMTP.php';
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-// $mail = new PHPMailer();
+$mail = new PHPMailer();
 
 // $mail->IsSMTP();                                      // set mailer to use SMTP
 // $mail->Host = "smtp.gmail.com";  // specify main and backup server
