@@ -38,7 +38,7 @@ $mail->Password = $mailPass; // SMTP password
 
 $mail->From = $hostEmail;
 $mail->FromName = "Pedro Salinas Ibarra";
-$mail->AddAddress($recEmail, "Josh Adams");
+$mail->AddAddress($recEmail);
 // $mail->AddReplyTo("info@example.com", "Information");
 
 $mail->WordWrap = 50;                                 // set word wrap to 50 characters
