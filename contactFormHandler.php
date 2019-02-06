@@ -37,7 +37,7 @@ $mail->Username = $hostEmail;  // SMTP username
 $mail->Password = $mailPass; // SMTP password
 
 $mail->From = $hostEmail;
-$mail->FromName = "Mailer";
+$mail->FromName = "Pedro";
 $mail->AddAddress($recEmail, "Josh Adams");
 // $mail->AddReplyTo("info@example.com", "Information");
 
