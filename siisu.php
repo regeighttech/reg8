@@ -208,7 +208,6 @@
 		<!-- Contact Us form-->
 		<div id="myBtn">Contact Us</div>
 		<div w3-include-html="ContactForm/index.html"></div>
-
 		<!--
 		<div id="contactForm">
 		  <img id="contactUsImage" src="reg8/img/contactUs.png" alt="Contact Us image">
