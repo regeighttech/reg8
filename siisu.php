@@ -247,11 +247,9 @@
 					</span>
 
 					<span class="contact100-form-title-2">
-						ENQUIRIES AND FEEDBACK
+						Feel free to drop us a line below!
 					</span>
-					<span class="contact100-form-title-2">
-						For all written feedback and general enquiries, please get in touch:
-					</span>
+
 				</div>
 
 				<form class="contact100-form validate-form">
