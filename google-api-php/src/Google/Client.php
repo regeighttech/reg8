@@ -40,8 +40,8 @@ class Google_Client
 {
   const LIBVER = "2.2.2";
   const USER_AGENT_SUFFIX = "google-api-php-client/";
-  const OAUTH2_REVOKE_URI = 'https://oauth2.googleapis.com/revoke';
-  const OAUTH2_TOKEN_URI = 'https://oauth2.googleapis.com/token';
+  const OAUTH2_REVOKE_URI = 'https://accounts.google.com/o/oauth2/revoke';
+  const OAUTH2_TOKEN_URI = 'https://www.googleapis.com/oauth2/v4/token';
   const OAUTH2_AUTH_URL = 'https://accounts.google.com/o/oauth2/auth';
   const API_BASE_PATH = 'https://www.googleapis.com';
 
@@ -130,7 +130,6 @@ class Google_Client
           // Task Runner retry configuration
           // @see Google_Task_Runner
           'retry' => array(),
-          'retry_map' => null,
 
           // cache config for downstream auth caching
           'cache_config' => [],
@@ -637,9 +636,6 @@ class Google_Client
    * If no value is specified and the user has not previously authorized
    * access, then the user is shown a consent screen.
    * @param $prompt string
-   *  {@code "none"} Do not display any authentication or consent screens. Must not be specified with other values.
-   *  {@code "consent"} Prompt the user for consent.
-   *  {@code "select_account"} Prompt the user to select an account.
    */
   public function setPrompt($prompt)
   {
@@ -729,13 +725,13 @@ class Google_Client
   /**
    * Set the scopes to be requested. Must be called before createAuthUrl().
    * Will remove any previously configured scopes.
-   * @param string|array $scope_or_scopes, ie: array('https://www.googleapis.com/auth/plus.login',
+   * @param array $scopes, ie: array('https://www.googleapis.com/auth/plus.login',
    * 'https://www.googleapis.com/auth/moderator')
    */
-  public function setScopes($scope_or_scopes)
+  public function setScopes($scopes)
   {
     $this->requestedScopes = array();
-    $this->addScope($scope_or_scopes);
+    $this->addScope($scopes);
   }
 
   /**
@@ -799,13 +795,7 @@ class Google_Client
     // this is where most of the grunt work is done
     $http = $this->authorize();
 
-    return Google_Http_REST::execute(
-        $http,
-        $request,
-        $expectedClass,
-        $this->config['retry'],
-        $this->config['retry_map']
-    );
+    return Google_Http_REST::execute($http, $request, $expectedClass, $this->config['retry']);
   }
 
   /**
