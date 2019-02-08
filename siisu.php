@@ -248,11 +248,11 @@
 					</span>
 
 					<span class="contact100-form-title-2">
-						ENQUIRIES AND FEEDBACK
+						<b>ENQUIRIES AND FEEDBACK</b>
 
-						For all written feedback and general enquiries, 
+						<b>For all written feedback and general enquiries, 
 
-						please get in touch:
+						please get in touch:</b>
 					</span>
 				</div>
 
