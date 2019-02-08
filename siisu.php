@@ -64,7 +64,6 @@
 			position: fixed;
 		 	top:50%;
 		 	left:50%;
-		 	-webkit-transform: translate(-50%,-50%)
 		}
 		/*#contactForm { 
 		  display: none;
@@ -248,11 +247,10 @@
 					</span>
 
 					<span class="contact100-form-title-2">
-						<b>ENQUIRIES AND FEEDBACK</b>
-
-						<b>For all written feedback and general enquiries, 
-
-						please get in touch:</b>
+						ENQUIRIES AND FEEDBACK
+					</span>
+					<span class="contact100-form-title-2">
+						For all written feedback and general enquiries, please get in touch:
 					</span>
 				</div>
 
