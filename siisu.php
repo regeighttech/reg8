@@ -60,7 +60,13 @@
 		#contact:hover { background: #666; }
 		#contact:active { background: #444; }
 
-		#contactForm { 
+		#contactForm{
+			position: fixed;
+		 	top:50%;
+		 	left:50%;
+		 	-webkit-transform: translate(-50%,-50%)
+		}
+		/*#contactForm { 
 		  display: none;
 		  border: 6px solid #303030; 
 		  padding: 2em;
@@ -74,7 +80,7 @@
 		  -webkit-transform: translate(-50%,-50%)
 		}
 
-		/*#contactForm input[type="text"],
+		#contactForm input[type="text"],
 		#contactForm input[type="email"]{
 		  background: #303030;
 		  border: #0a0a0a;
