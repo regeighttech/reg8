@@ -74,7 +74,7 @@
 		  -webkit-transform: translate(-50%,-50%)
 		}
 
-		#contactForm input[type="text"],
+		/*#contactForm input[type="text"],
 		#contactForm input[type="email"]{
 		  background: #303030;
 		  border: #0a0a0a;
@@ -114,7 +114,7 @@
 		  vertical-align: middle;
 		  text-align: center;
 		  padding: 0px;
-		}
+		}*/
 
 
 		//OLD CSS STARTS HERE
@@ -198,12 +198,12 @@
 			left: 0%;
 		}
 
-		#contactUsForm{
+		/*#contactUsForm{
 			background: black;
 			margin: 10px;
     		padding: 1px;
 
-		}
+		}*/
 
 
 	</style>
