@@ -2,12 +2,12 @@
 	if(isset($_POST['submit'])){
 		$name = $_POST['name'];
 		$email = $_POST['email'];
-		$mobile = $_POST['mobile'];
-		$notes = $_POST['notes'];
+		$phone = $_POST['phone'];
+		$notes = $_POST['message'];
 
 		$to='brayannereyes12@gmail.com';
 		$subject = 'Contact Us Form Submission';
-		$message = "Name: " . $name . "\n" . "Email: " . $email . "\n" . "Mobile: " . $mobile . "\n" . "Notes: " . $notes;
+		$message = "Name: " . $name . "\n" . "Email: " . $email . "\n" . "Phone: " . $phone . "\n" . "Message: " . $notes;
 		$headers = "From: " . $email;
 
 		if(mail($to, $subject, $message, $headers)){
