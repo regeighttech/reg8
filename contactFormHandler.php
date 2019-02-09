@@ -5,6 +5,8 @@
 		$phone = $_POST['phone'];
 		$notes = $_POST['notes'];
 
+		echo $name . " " . $email . " " . $phone . " " . $notes;
+
 		$to='brayannereyes12@gmail.com';
 		$subject = 'Contact Us Form Submission';
 		$message = "Name: " . $name . "\n" . "Email: " . $email . "\n" . "Phone: " . $phone . "\n" . "Message: " . $notes;
