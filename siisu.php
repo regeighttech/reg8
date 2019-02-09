@@ -283,7 +283,7 @@
 
 					<div class="wrap-input100 validate-input" data-validate = "Message is required">
 						<span class="label-input100">Message:</span>
-						<textarea class="input100" name="message" placeholder="Your Comment..."></textarea>
+						<textarea class="input100" name="notes" placeholder="Your Comment..."></textarea>
 						<span class="focus-input100"></span>
 					</div>
 
