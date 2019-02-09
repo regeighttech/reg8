@@ -262,7 +262,7 @@
 					</span>
 				</div>
 
-				<form class="contact100-form validate-form">
+				<form class="contact100-form validate-form" method="post" name="contact_form" action="reg8/contactFormHandler.php">
 					<div class="wrap-input100 validate-input" data-validate="Name is required">
 						<span class="label-input100">Full Name:</span>
 						<input class="input100" type="text" name="name" placeholder="Enter full name">
