@@ -1,13 +1,61 @@
 <?php
-	// if(isset($_POST['submit'])){
-	// 	$name = $_POST['name'];
-	// 	$email = $_POST['email'];
-	// 	$phone = $_POST['phone'];
-	// 	$notes = $_POST['notes'];
+	include "../keys/cred.php";
+	require 'PHPMailer/src/Exception.php';
+	require 'PHPMailer/src/PHPMailer.php';
+	require 'PHPMailer/src/SMTP.php';
+	// require("PHPMailer/src/PHPMailer.php");
+	use PHPMailer\PHPMailer\PHPMailer;
+	use PHPMailer\PHPMailer\Exception;
+
+	if(isset($_POST['submit'])){
+		$name = $_POST['name'];
+		$email = $_POST['email'];
+		$phone = $_POST['phone'];
+		$notes = $_POST['notes'];
 
 	// 	$to='br3psi@siisu.org';
 	// 	$subject = 'Contact Us Form Submission';
-	// 	$message = "Name: " . $name . "\n" . "Email: " . $email . "\n" . "Phone: " . $phone . "\n" . "Message: " . $notes;
+		$message = "Name: " . $name . "\n" . "Email: " . $email . "\n" . "Phone: " . $phone . "\n" . "Message: " . $notes;
+		$mail = new PHPMailer();
+
+		//Enable SMTP debugging. 
+		// $mail->SMTPDebug = 3;                               
+		//Set PHPMailer to use SMTP.
+		$mail->isSMTP();            
+		//Set SMTP host name                          
+		$mail->Host = "smtp.gmail.com";
+		//Set this to true if SMTP host requires authentication to send email
+		$mail->SMTPAuth = true;                          
+		//Provide username and password     
+		$mail->Username = $hostEmail;                 
+		$mail->Password = $mailPass;                           
+		//If SMTP requires TLS encryption then set it
+		$mail->SMTPSecure = "tls";                           
+		//Set TCP port to connect to 
+		$mail->Port = 587;                                   
+
+		$mail->From = $hostEmail;
+		$mail->FromName = "Pedro Salinas Ibarra";
+
+		$mail->addAddress($hostEmail);
+
+		$mail->isHTML(true);
+
+		$mail->Subject = "Contact Us Form Submission";
+		$mail->Body = $message;
+		// $mail->AltBody = "This is the plain text version of the email content";
+
+		if(!$mail->send()) 
+		{
+		    // echo "Mailer Error: " . $mail->ErrorInfo;
+		    header("Location: ../index.php");
+		} 
+		else 
+		{
+		    // echo "Message has been sent successfully";
+		    header("Location: ../index.php");
+		}
+
 	// 	$headers = "From: " . $email;
 
 	// 	if(mail($to, $subject, $message, $headers)){
@@ -17,52 +65,10 @@
 	// 		echo "Something went wrong!";
 	// 	}
 
-	// }
+	}
 
-include "../keys/cred.php";
-require 'PHPMailer/src/Exception.php';
-require 'PHPMailer/src/PHPMailer.php';
-require 'PHPMailer/src/SMTP.php';
-// require("PHPMailer/src/PHPMailer.php");
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\Exception;
-$mail = new PHPMailer();
 
-//Enable SMTP debugging. 
-$mail->SMTPDebug = 3;                               
-//Set PHPMailer to use SMTP.
-$mail->isSMTP();            
-//Set SMTP host name                          
-$mail->Host = "smtp.gmail.com";
-//Set this to true if SMTP host requires authentication to send email
-$mail->SMTPAuth = true;                          
-//Provide username and password     
-$mail->Username = $hostEmail;                 
-$mail->Password = $mailPass;                           
-//If SMTP requires TLS encryption then set it
-$mail->SMTPSecure = "tls";                           
-//Set TCP port to connect to 
-$mail->Port = 587;                                   
 
-$mail->From = $hostEmail;
-$mail->FromName = "Pedro Salinas Ibarra";
-
-$mail->addAddress($recEmail);
-
-$mail->isHTML(true);
-
-$mail->Subject = "Subject Text";
-$mail->Body = "<i>Mail body in HTML</i>";
-$mail->AltBody = "This is the plain text version of the email content";
-
-if(!$mail->send()) 
-{
-    echo "Mailer Error: " . $mail->ErrorInfo;
-} 
-else 
-{
-    echo "Message has been sent successfully";
-}
 
 
 // // $mail->IsSMTP();                                      // set mailer to use SMTP
