@@ -38,7 +38,7 @@ $mail->Host = "smtp.gmail.com";
 $mail->SMTPAuth = true;                          
 //Provide username and password     
 $mail->Username = $hostEmail;                 
-$mail->Password = $mailPass                           
+$mail->Password = $mailPass;                           
 //If SMTP requires TLS encryption then set it
 $mail->SMTPSecure = "tls";                           
 //Set TCP port to connect to 
