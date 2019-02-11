@@ -86,21 +86,21 @@
 
 	<div class="container-contact100">
 		<video autoplay muted loop class="contact100-map" id="google_map">
-		  <source src="../city.mp4" type="video/mp4">
+		  <source src="reg8/city.mp4" type="video/mp4">
 		  Your browser does not support HTML5 video.
 		</video>
 
 		<!--<img src="img/siisu.png" alt="SiiSu Logo">-->
-		<img id="center" src="../img/SiiSUFinal.png" alt="SiiSu Logo">
+		<img id="center" src="reg8/img/SiiSUFinal.png" alt="SiiSu Logo">
 		<!--<img id="topRight" src="img/SiiSUBlueBlack.png" alt="SiiSu Logo">-->
-		<img id="topLeft" src="../img/SiiSUBlueWhite.svg" alt="SiiSu Logo">
+		<img id="topLeft" src="reg8/img/SiiSUBlueWhite.svg" alt="SiiSu Logo">
 
 		<div class="content">
 		<div id="myBtn">Contact Us</div>
 		</div>
 
 		<div class="wrap-contact100">
-			<div class="contact100-form-title" style="background-image: url(images/bg-01.jpg);">
+			<div class="contact100-form-title" style="background-image: url(reg8/ContactForm/images/bg-01.jpg);">
 				<span class="contact100-form-title-1">
 					Contact Us
 				</span>
