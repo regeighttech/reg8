@@ -61,6 +61,20 @@
 		#contact:active { background: #444; }
 
 		#contactForm {
+		  /*width: 100%;*/  
+		  min-height: 100vh;
+		  display: -webkit-box;
+		  display: -webkit-flex;
+		  display: -moz-box;
+		  display: -ms-flexbox;
+		  display: flex;
+		  flex-wrap: wrap;
+		  justify-content: center;
+		  align-items: center;
+		  padding: 15px;
+		  background: transparent;
+		  position: relative;
+		  z-index: 1;
 			display: none;
 			text-align: center;
 			position: fixed;
@@ -246,7 +260,7 @@
 
 		<div id="contactForm">
 			<div class="wrap-contact100">
-				<div class="contact100-form-title" style="background-image: url(reg8/ContactForm/images/bg-01.jpg);">
+				<div class="contact100-form-title" style="background-image: url(ContactForm/images/bg-01.jpg);">
 					<span class="contact100-form-title-1">
 						Contact Us
 					</span>
