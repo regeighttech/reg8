@@ -36,6 +36,24 @@
 			min-width: 100%;
 			min-height: 100%;
 		}
+
+		#myBtn {
+		  width: 200px;
+		  font-size: 18px;
+		  padding: 10px;
+		  border: none;
+		  background: #000;
+		  color: #fff;
+		  cursor: pointer;
+		  right: 43%;
+		  bottom: 20%;
+		  position: absolute;
+		}
+
+		#myBtn:hover {
+		  background: #ddd;
+		  color: black;
+		}
 	</style>
 </head>
 <body>
@@ -46,6 +64,8 @@
 		  <source src="../city.mp4" type="video/mp4">
 		  Your browser does not support HTML5 video.
 		</video>
+
+		<div id="myBtn">Contact Us</div>
 
 		<div class="wrap-contact100">
 			<div class="contact100-form-title" style="background-image: url(images/bg-01.jpg);">
@@ -127,7 +147,26 @@
 	  gtag('js', new Date());
 
 	  gtag('config', 'UA-23581568-13');
+
+
+	  $(function() {
+	  // contact form animations
+	  $('#myBtn').click(function() {
+	    $('.wrap-contact100').fadeToggle();
+	  })
+	  $(document).mouseup(function (e) {
+	    var container = $(".wrap-contact100");
+
+	    if (!container.is(e.target) // if the target of the click isn't the container...
+	        && container.has(e.target).length === 0) // ... nor a descendant of the container
+	    {
+	        container.fadeOut();
+	    }
+	  });
+	});
 	</script>
 
 </body>
 </html>
+
+
