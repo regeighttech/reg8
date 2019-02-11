@@ -364,10 +364,10 @@
 	$(function() {
 	  // contact form animations
 	  $('#myBtn').click(function() {
-	    $('.wrap-contact100').fadeToggle();
+	    $('#contactForm').fadeToggle();
 	  })
 	  $(document).mouseup(function (e) {
-	    var container = $(".wrap-contact100");
+	    var container = $("#contactForm");
 
 	    if (!container.is(e.target) // if the target of the click isn't the container...
 	        && container.has(e.target).length === 0) // ... nor a descendant of the container
