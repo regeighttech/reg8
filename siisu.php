@@ -28,6 +28,8 @@
 <!--===============================================================================================-->
 	<style type="text/css">
 
+		button:focus {outline:0 !important;}
+
 		#myBtn {
 		  width: 200px;
 		  font-size: 18px;
