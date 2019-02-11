@@ -240,7 +240,7 @@
 	  <button id="myBtn">Contact Us</button>
 	</div>-->
 
-	<div class="content">
+	<div class="container-contact100">
 		<!-- Contact Us form-->
 		<div id="myBtn">Contact Us</div>
 
