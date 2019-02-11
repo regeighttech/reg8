@@ -69,6 +69,23 @@
 		.wrap-contact100 {
 			display: none;
 		}
+
+		/*Center Logo*/
+		#center{
+			position:fixed;
+		    max-width:25%;
+		  	max-height:25%;
+		  	top: 35%;
+			left: 37%;
+		}
+
+		#topLeft{
+			position:fixed;
+		    max-width:10%;
+		  	max-height:10%;
+		  	top: 0%;
+			left: 0%;
+		}
 	</style>
 </head>
 <body>
@@ -80,6 +97,11 @@
 		  Your browser does not support HTML5 video.
 		</video>
 
+		<!--<img src="img/siisu.png" alt="SiiSu Logo">-->
+		<img id="center" src="../img/SiiSUFinal.png" alt="SiiSu Logo">
+		<!--<img id="topRight" src="img/SiiSUBlueBlack.png" alt="SiiSu Logo">-->
+		<img id="topLeft" src="../img/SiiSUBlueWhite.svg" alt="SiiSu Logo">
+
 		<div class="content">
 		<div id="myBtn">Contact Us</div>
 		</div>
@@ -89,13 +111,18 @@
 				<span class="contact100-form-title-1">
 					Contact Us
 				</span>
-
-				<span class="contact100-form-title-2">
-					Feel free to drop us a line below!
-				</span>
+				<span style="font-weight: bold;" class="contact100-form-title-2">
+						ENQUIRIES AND FEEDBACK
+					</span>
+					<span class="contact100-form-title-2">
+						For all written feedback and general enquiries,
+					</span>
+					<span class="contact100-form-title-2">
+						please get in touch:
+					</span>
 			</div>
 
-			<form class="contact100-form validate-form">
+			<form class="contact100-form validate-form" method="post" name="contact_form" action="../contactFormHandler.php">
 				<div class="wrap-input100 validate-input" data-validate="Name is required">
 					<span class="label-input100">Full Name:</span>
 					<input class="input100" type="text" name="name" placeholder="Enter full name">
