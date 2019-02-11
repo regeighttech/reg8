@@ -240,11 +240,12 @@
 	  <button id="myBtn">Contact Us</button>
 	</div>-->
 
-	<div class="content">
+	<div class="container-contact100">
 		<!-- Contact Us form-->
 		<div id="myBtn">Contact Us</div>
 
-		<div id="contactForm">
+		<!--<div id="contactForm">-->
+			<div class="container-contact100">
 			<div class="wrap-contact100">
 				<div class="contact100-form-title" style="background-image: url(reg8/ContactForm/images/bg-01.jpg);">
 					<span class="contact100-form-title-1">
@@ -297,8 +298,8 @@
 					</div>
 				</form>
 			</div>
-		<!--</div>
-		
+		</div>
+		<!--
 		<div id="contactForm">
 		  <img id="contactUsImage" src="reg8/img/contactUs.png" alt="Contact Us image">
 		  <p>ENQUIRIES AND FEEDBACK</p>
@@ -366,10 +367,10 @@
 	$(function() {
 	  // contact form animations
 	  $('#myBtn').click(function() {
-	    $('#contactForm').fadeToggle();
+	    $('.wrap-contact100').fadeToggle();
 	  })
 	  $(document).mouseup(function (e) {
-	    var container = $("#contactForm");
+	    var container = $(".wrap-contact100");
 
 	    if (!container.is(e.target) // if the target of the click isn't the container...
 	        && container.has(e.target).length === 0) // ... nor a descendant of the container
