@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<title>SiiSU - A Regulatory Solution</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -244,7 +244,8 @@
 		<!-- Contact Us form-->
 		<div id="myBtn">Contact Us</div>
 
-		<div id="contactForm">
+		<!--<div id="contactForm">-->
+			<div class="container-contact100">
 			<div class="wrap-contact100">
 				<div class="contact100-form-title" style="background-image: url(reg8/ContactForm/images/bg-01.jpg);">
 					<span class="contact100-form-title-1">
@@ -364,13 +365,12 @@
 	}
 
 	$(function() {
-	  
 	  // contact form animations
 	  $('#myBtn').click(function() {
-	    $('#contactForm').fadeToggle();
+	    $('.wrap-contact100').fadeToggle();
 	  })
 	  $(document).mouseup(function (e) {
-	    var container = $("#contactForm");
+	    var container = $(".wrap-contact100");
 
 	    if (!container.is(e.target) // if the target of the click isn't the container...
 	        && container.has(e.target).length === 0) // ... nor a descendant of the container
@@ -378,7 +378,6 @@
 	        container.fadeOut();
 	    }
 	  });
-	  
 	});
 
 
