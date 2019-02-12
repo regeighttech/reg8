@@ -146,12 +146,14 @@
 							<i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
 						</span>
 					</button>
-				<button class="contact100-form-btn" style="color:#ff4b5a;">
-						<span>
-							Cancel
-							<i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
-						</span>
+				<div class="container-contact100-form-btn" style="color:#ff4b5a; float:right;">
+					<button class="contact100-form-btn" >
+							<span>
+								Cancel
+								<i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
+							</span>
 					</button>
+				</div>
 				</div>
 			</form>
 		</div>
