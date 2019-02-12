@@ -139,7 +139,7 @@
 					<span class="focus-input100"></span>
 				</div>
 
-				<div class="container-contact100-form-btn">
+				<div class="container-contact100-form-btn" style="width: unset;">
 					<button class="contact100-form-btn" name="submit" type="submit">
 						<span>
 							Submit
