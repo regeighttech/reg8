@@ -148,7 +148,7 @@
 					</button>
 				</div>
 				<div class="container-contact100-form-btn" style="color:#ff4b5a; float:right; width: unset;">
-					<button class="contact100-form-btn" style="background-color:#ff4b5a;">
+					<button class="contact100-form-btn" id="cancel-button" style="background-color:#ff4b5a;">
 							<span>
 								Cancel
 								<i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
@@ -192,7 +192,6 @@
 
 	  gtag('config', 'UA-23581568-13');
 
-
 	  $(function() {
 	  // contact form animations
 	  $('#myBtn').click(function() {
@@ -206,6 +205,17 @@
 	    {
 	        container.fadeOut();
 	    }
+	  });
+	});
+
+	  $(function() {
+	  // contact form animations
+	  $('#cancel_button').click(function() {
+	    $('.wrap-contact100').fadeToggle();
+	  })
+	  $(document).mouseup(function (e) {
+	    var container = $(".wrap-contact100");
+	        container.fadeOut();
 	  });
 	});
 	</script>
