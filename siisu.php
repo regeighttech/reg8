@@ -147,7 +147,7 @@
 						</span>
 					</button>
 				</div>
-				<div class="container-contact100-form-btn" style="color:#ff4b5a; float:right; width: unset;">
+				<div class="container-contact100-form-btn" id="cancel_button" style="color:#ff4b5a; float:right; width: unset;">
 					<button class="contact100-form-btn" style="background-color:#ff4b5a;">
 							<span>
 								Cancel
@@ -203,6 +203,21 @@
 
 	    if (!container.is(e.target) // if the target of the click isn't the container...
 	        && container.has(e.target).length === 0) // ... nor a descendant of the container
+	    {
+	        container.fadeOut();
+	    }
+	  });
+	});
+
+	  $(function() {
+	  // contact form animations
+	  $('#cancel_button').click(function() {
+	    $('.wrap-contact100').fadeToggle();
+	  })
+	  $(document).mouseup(function (e) {
+	    var cancel_button = $("#cancel_button");
+
+	    if (cancel_button.is(e.target)) // if the target of the click isn't the container...
 	    {
 	        container.fadeOut();
 	    }
