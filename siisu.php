@@ -81,6 +81,22 @@
 		  	top: 0%;
 			left: 0%;
 		}
+
+		#copyRightsBottomLeft{
+			position:fixed;
+		    max-width:10%;
+		  	max-height:10%;
+		  	bottom: : 0%;
+			left: 0%;
+		}
+
+		#copyRightsBottomRight{
+			position:fixed;
+		    max-width:10%;
+		  	max-height:10%;
+		  	bottom: : 0%;
+			right: 0%;
+		}
 	</style>
 </head>
 <body>
@@ -96,6 +112,9 @@
 		<img id="center" src="reg8/img/SiiSUFinal.png" alt="SiiSu Logo">
 		<!--<img id="topRight" src="img/SiiSUBlueBlack.png" alt="SiiSu Logo">-->
 		<img id="topLeft" src="reg8/img/SiiSUBlueWhite.svg" alt="SiiSu Logo">
+
+		<span id="copyRightsBottomRight">© 2019 | SiiSU. All rights reserved.       Powered by SiiSU Technologies</span>
+		<span id="copyRightsBottomLeft">© 2019 | SiiSU. All rights reserved.       Powered by SiiSU Technologies</span>
 
 		<div class="content">
 		<div id="myBtn">Contact Us</div>
