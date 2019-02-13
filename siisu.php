@@ -117,8 +117,8 @@
 
 		<div class="content">
 			<div id="myBtn">Contact Us</div>
-			<span id="copyRightsBottomRight">© 2019 | SiiSU. All rights reserved.       Powered by SiiSU Technologies</span>
-			<span id="copyRightsBottomLeft">© 2019 | SiiSU. All rights reserved.       Powered by SiiSU Technologies</span>
+			<span id="copyRightsBottomRight">Powered by SiiSU Technologies</span>
+			<span id="copyRightsBottomLeft">© 2019 | SiiSU. All rights reserved.</span>
 		</div>
 
 		<div class="wrap-contact100">
