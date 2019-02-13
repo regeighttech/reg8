@@ -87,7 +87,7 @@
 
 
 	<div class="container-contact100">
-		<video autoplay muted loop class="contact100-map" id="google_map" style="position: fixed;vwidth:auto; min-height: 100%">
+		<video autoplay muted loop class="contact100-map" id="google_map" style="position: fixed; min-height: 100%; width:auto;">
 		  <source src="reg8/city.mp4" type="video/mp4">
 		  Your browser does not support HTML5 video.
 		</video>
