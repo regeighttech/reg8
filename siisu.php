@@ -38,9 +38,11 @@
 		  background: #000;
 		  color: #fff;
 		  cursor: pointer;
-		  right: 43%;
-		  bottom: 20%;
+
 		  position: absolute;
+		  left: 50%;
+		  top: 50%;
+		  transform: translate(-50%, -50%);
 		}
 
 		#myBtn:hover {
