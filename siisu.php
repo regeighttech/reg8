@@ -83,19 +83,17 @@
 		}
 
 		#copyRightsBottomLeft{
-			position:fixed;
-		    max-width:10%;
-		  	max-height:10%;
-		  	bottom: : 0%;
-			left: 0%;
+			position:absolute;
+		  	bottom: 0;
+			left: 0;
+			color: #fff;
 		}
 
 		#copyRightsBottomRight{
-			position:fixed;
-		    max-width:10%;
-		  	max-height:10%;
-		  	bottom: : 0%;
-			right: 0%;
+			position:absolute;
+		  	bottom: 0;
+			right: 0;
+			color: #fff;
 		}
 	</style>
 </head>
@@ -117,7 +115,9 @@
 		<span id="copyRightsBottomLeft">© 2019 | SiiSU. All rights reserved.       Powered by SiiSU Technologies</span>
 
 		<div class="content">
-		<div id="myBtn">Contact Us</div>
+			<div id="myBtn">Contact Us</div>
+			<span id="copyRightsBottomRight">© 2019 | SiiSU. All rights reserved.       Powered by SiiSU Technologies</span>
+			<span id="copyRightsBottomLeft">© 2019 | SiiSU. All rights reserved.       Powered by SiiSU Technologies</span>
 		</div>
 
 		<div class="wrap-contact100">
