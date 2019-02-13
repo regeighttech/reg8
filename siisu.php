@@ -87,6 +87,7 @@
 		  	bottom: 0;
 			left: 0;
 			color: #fff;
+			font-size: .2em;
 		}
 
 		#copyRightsBottomRight{
@@ -94,6 +95,7 @@
 		  	bottom: 0;
 			right: 0;
 			color: #fff;
+			font-size: .2em;
 		}
 	</style>
 </head>
