@@ -66,11 +66,12 @@
 
 		/*Center Logo*/
 		#center{
-			position:fixed;
 		    max-width:25%;
 		  	max-height:25%;
-		  	top: 35%;
-			left: 37%;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
 		}
 
 		#topLeft{
