@@ -115,9 +115,6 @@
 		<!--<img id="topRight" src="img/SiiSUBlueBlack.png" alt="SiiSu Logo">-->
 		<img id="topLeft" src="reg8/img/SiiSUBlueWhite.svg" alt="SiiSu Logo">
 
-		<span id="copyRightsBottomRight">© 2019 | SiiSU. All rights reserved.       Powered by SiiSU Technologies</span>
-		<span id="copyRightsBottomLeft">© 2019 | SiiSU. All rights reserved.       Powered by SiiSU Technologies</span>
-
 		<div class="content">
 			<div id="myBtn">Contact Us</div>
 			<span id="copyRightsBottomRight">© 2019 | SiiSU. All rights reserved.       Powered by SiiSU Technologies</span>
