@@ -84,61 +84,6 @@
 		 	-webkit-transform: translate(-50%,-50%)
 
 		}
-		/*#contactForm { 
-		  display: none;
-		  border: 6px solid #303030; 
-		  padding: 2em;
-		  width: 400px;
-		  text-align: center;
-		  background: white;
-		  position: fixed;
-		  top:50%;
-		  left:50%;
-		  transform: translate(-50%,-50%);
-		  -webkit-transform: translate(-50%,-50%)
-		}
-
-		#contactForm input[type="text"],
-		#contactForm input[type="email"]{
-		  background: #303030;
-		  border: #0a0a0a;
-		  transition: background 0.3s ease-in-out;
-		}
-
-		#contactForm input[type="text"]:focus,
-		#contactForm input[type="email"]:focus,
-		#contactForm textarea:focus {
-		  background: #fefefe;
-		}
-
-		input, textarea { 
-		  margin: .8em auto;
-		  font-family: inherit; 
-		  text-transform: inherit; 
-		  font-size: inherit;
-		  
-		  display: block; 
-		  width: 280px; 
-		  padding: .4em;
-		  background: #303030;
-    	  border: none;
-		}
-		textarea { height: 80px; resize: none; }
-
-		.formBtn { 
-		  width: 140px;
-		  display: inline-block;
-		  
-		  background: #303030;
-		  color: #fff;
-		  font-weight: 100;
-		  font-size: 1.2em;
-		  border: none;
-		  height: 30px;
-		  vertical-align: middle;
-		  text-align: center;
-		  padding: 0px;
-		}*/
 
 
 		//OLD CSS STARTS HERE
@@ -204,16 +149,6 @@
 			left: 37%;
 		}
 
-		/*
-		#topRight{
-			position:fixed;
-		    max-width:10%;
-		  	max-height:10%;
-		  	top: 0%;
-			right: 0%;
-		}
-		*/
-
 		#topLeft{
 			position:fixed;
 		    max-width:10%;
@@ -221,14 +156,6 @@
 		  	top: 0%;
 			left: 0%;
 		}
-
-		/*#contactUsForm{
-			background: black;
-			margin: 10px;
-    		padding: 1px;
-
-		}*/
-
 
 	</style>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -240,19 +167,9 @@
 	  Your browser does not support HTML5 video.
 	</video>
 
-	<!--<img src="img/siisu.png" alt="SiiSu Logo">-->
 	<img id="center" src="img/SiiSUFinal.png" alt="SiiSu Logo">
 
-	<!--<img id="topRight" src="img/SiiSUBlueBlack.png" alt="SiiSu Logo">-->
-
 	<img id="topLeft" src="img/SiiSUBlueWhite.svg" alt="SiiSu Logo">
-
-	<!--<div class="content">
-	  <h1>Heading</h1>
-	  <p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum cu recteque expetendis neglegentur. Cu mentitum maiestatis persequeris pro, pri ponderum tractatos ei. Id qui nemore latine molestiae, ad mutat oblique delicatissimi pro.</p>
-	  <button id="myBtn" onclick="myFunction()">Pause</button>
-	  <button id="myBtn">Contact Us</button>
-	</div>-->
 
 <div class="content">
 		<!-- Contact Us form-->
@@ -311,22 +228,6 @@
 					</div>
 				</form>
 			</div>
-		<!--
-		<div id="contactForm">
-		  <img id="contactUsImage" src="reg8/img/contactUs.png" alt="Contact Us image">
-		  <p>ENQUIRIES AND FEEDBACK</p>
-		  <p>For all written feedback and general enquiries, please get in touch:</p>
-		  
-		  <form id="contactUsForm" method="post" name="contact_form" action="reg8/contactFormHandler.php">
-		    <input placeholder="Name" name="name" type="text" required />
-		    <input placeholder="Email" name="email" type="email" required />
-		    <input placeholder="Mobile" name="mobile" type="text" required />
-		    <textarea placeholder="Notes" name="notes" required></textarea>
-		    <input name="submit" class="formBtn" type="submit" />
-		    <input class="formBtn" type="reset" />
-		  </form>
-		</div>
-		-->
 
 	</div></div>
 	<div id="dropDownSelect1"></div>
@@ -362,19 +263,6 @@
 		</script>
 
 	<script>
-	var video = document.getElementById("myVideo");
-	var btn = document.getElementById("myBtn");
-
-	function myFunction() {
-	  if (video.paused) {
-	    video.play();
-	    //btn.innerHTML = "Pause";
-	  } else {
-	    video.pause();
-	    //btn.innerHTML = "Play";
-	  }
-	}
-
 	$(function() {
 	  // contact form animations
 	  $('#myBtn').click(function() {
@@ -390,8 +278,6 @@
 	    }
 	  });
 	});
-
-
 	</script>
 
 </body>
