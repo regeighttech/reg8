@@ -106,15 +106,17 @@
 
 
 	<div class="container-contact100">
+		<!--
 		<video autoplay muted loop class="contact100-map" id="google_map">
 		  <source src="reg8/city.mp4" type="video/mp4">
 		  Your browser does not support HTML5 video.
 		</video>
+		-->
 
 		<!--<img src="img/siisu.png" alt="SiiSu Logo">-->
 		<img id="center" src="reg8/img/SiiSUFinal.png" alt="SiiSu Logo">
 		<!--<img id="topRight" src="img/SiiSUBlueBlack.png" alt="SiiSu Logo">-->
-		<img id="topLeft" src="reg8/img/SiiSUBlueWhite.svg" alt="SiiSu Logo">
+		<!--<img id="topLeft" src="reg8/img/SiiSUBlueWhite.svg" alt="SiiSu Logo">-->
 
 		<div class="content">
 			<div id="myBtn">Contact Us</div>
