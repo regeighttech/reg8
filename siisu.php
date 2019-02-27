@@ -100,6 +100,10 @@
 			font-size: .6em;
 			max-width: 30%;
 		}
+
+		body {
+			background-color: black;
+		}
 	</style>
 </head>
 <body>
