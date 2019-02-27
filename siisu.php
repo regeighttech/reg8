@@ -125,7 +125,7 @@
 		<div class="content">
 			<div id="myBtn">Contact Us</div>
 			<span id="copyRightsBottomRight">Powered by SiiSU Technologies</span>
-			<span id="copyRightsBottomLeft">© 2019 | SiiSU. All rights reserved.</span>
+			<span id="copyRightsBottomLeft">© 2019 | SiiSU, Inc. A Delaware Corporation. All rights reserved.</span>
 		</div>
 
 		<div class="wrap-contact100">
