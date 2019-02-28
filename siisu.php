@@ -105,7 +105,7 @@
 		<!--<img id="topLeft" src="reg8/img/SiiSUBlueWhite.svg" alt="SiiSu Logo">-->
 
 		<div class="content">
-			<div id="myBtn">Contact Us</div>
+			<div style="color: #fff;" id="myBtn">Contact Us</div>
 			<span id="copyRightsBottomRight">Powered by SiiSU Technologies</span>
 			<span id="copyRightsBottomLeft">© 2019 | SiiSU, Inc. A Delaware Corporation. All rights reserved.</span>
 		</div>
