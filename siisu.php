@@ -83,24 +83,6 @@
 			left: 0%;
 		}
 
-		#copyRightsBottomLeft{
-			position:absolute;
-		  	bottom: 0;
-			left: 0;
-			color: #fff;
-			font-size: .6em;
-			max-width: 30%;
-		}
-
-		#copyRightsBottomRight{
-			position:absolute;
-		  	bottom: 0;
-			right: 0;
-			color: #fff;
-			font-size: .6em;
-			max-width: 30%;
-		}
-
 		body {
 			background-color: black;
 		}
