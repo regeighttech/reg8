@@ -262,8 +262,8 @@
 	  });
 	});
 	</script>
-    <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
-    <script src="reg8/node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS. 
+    <script src="reg8/node_modules/jquery/dist/jquery.slim.min.js"></script>-->
     <script src="reg8/node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="reg8/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
