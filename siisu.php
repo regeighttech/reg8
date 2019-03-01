@@ -109,7 +109,7 @@
             <div class="collapse navbar-collapse" id="Navbar">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item Active"><a class="nav-link" href="#"><span class="fa fa-home fa-lg"></span> Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="reg8/aboutus.html"><span class="fa fa-info ga-lg"></span> About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="reg8/about.html"><span class="fa fa-info ga-lg"></span> About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
                 </ul>
             </div>
