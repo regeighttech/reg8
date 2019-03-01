@@ -110,7 +110,7 @@
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item Active"><a class="nav-link" href="#"><span class="fa fa-home fa-lg"></span> Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="reg8/about.html"><span class="fa fa-info ga-lg"></span> About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
+                    <li class="nav-item" id="contactUsBtn"><a class="nav-link" href="#"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -230,6 +230,22 @@
 
 	  gtag('config', 'UA-23581568-13');
 
+
+	jQuery(function() {
+	  // contact form animations
+	  jQuery('#contactUsBtn').click(function() {
+	    jQuery('.wrap-contact100').fadeToggle();
+	  })
+	  jQuery(document).mouseup(function (e) {
+	    var container = jQuery(".wrap-contact100");
+
+	    if (!container.is(e.target) // if the target of the click isn't the container...
+	        && container.has(e.target).length === 0) // ... nor a descendant of the container
+	    {
+	        container.fadeOut();
+	    }
+	  });
+	});
 
 	jQuery(function() {
 	  // contact form animations
