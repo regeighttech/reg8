@@ -105,12 +105,12 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand" href="siisu.org">SiiSU</a>
+            <a class="navbar-brand" href="#">SiiSU</a>
             <div class="collapse navbar-collapse" id="Navbar">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-home fa-lg"></span> Home</a></li>
-                    <li class="nav-item active"><a class="nav-link" href="./aboutus.html"><span class="fa fa-info ga-lg"></span> About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
+                    <li class="nav-item Active"><a class="nav-link" href="#"><span class="fa fa-home fa-lg"></span> Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="reg8/aboutus.html"><span class="fa fa-info ga-lg"></span> About</a></li>
+                    <li class="nav-item" id="myBtn"><a class="nav-link" href="#"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -133,7 +133,7 @@
 		<div class="content">
 			<div style="color: #fff;" id="myBtn">Contact Us</div>
 			<span id="copyRightsBottomRight">Powered by SiiSU Technologies</span>
-			<span id="copyRightsBottomLeft">© 2019 | SiiSU, Inc. A Delaware Corporation. All rights reserved.</span>
+			<span id="copyRightsBottomLeft">© 2019 | SiiSU, Inc. <i>A Delaware Corporation.</i> All rights reserved.</span>
 		</div>
 
 		<div class="wrap-contact100">
