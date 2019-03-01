@@ -231,13 +231,13 @@
 	  gtag('config', 'UA-23581568-13');
 
 
-	  $(function() {
+	jQuery(function() {
 	  // contact form animations
-	  $('#myBtn').click(function() {
-	    $('.wrap-contact100').fadeToggle();
+	  jQuery('#myBtn').click(function() {
+	    jQuery('.wrap-contact100').fadeToggle();
 	  })
-	  $(document).mouseup(function (e) {
-	    var container = $(".wrap-contact100");
+	  jQuery(document).mouseup(function (e) {
+	    var container = jQuery(".wrap-contact100");
 
 	    if (!container.is(e.target) // if the target of the click isn't the container...
 	        && container.has(e.target).length === 0) // ... nor a descendant of the container
@@ -247,13 +247,13 @@
 	  });
 	});
 
-	  $(function() {
+	  jQuery(function() {
 	  // contact form animations
-	  $('#cancel_button').click(function() {
-	    $('.wrap-contact100').fadeToggle();
+	  jQuery('#cancel_button').click(function() {
+	    jQuery('.wrap-contact100').fadeToggle();
 	  })
-	  $(document).mouseup(function (e) {
-	    var cancel_button = $("#cancel_button");
+	  jQuery(document).mouseup(function (e) {
+	    var cancel_button = jQuery("#cancel_button");
 
 	    if (cancel_button.is(e.target)) // if the target of the click isn't the container...
 	    {
