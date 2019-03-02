@@ -12,9 +12,7 @@
 		$email = $_POST['email'];
 		$phone = $_POST['phone'];
 		$notes = $_POST['notes'];
-		if(isset($_POST['page'])){
-			$page = $_POST['page'];
-		}
+		$page = $_POST['page'];
 
 	// 	$to='br3psi@siisu.org';
 	// 	$subject = 'Contact Us Form Submission';
@@ -47,12 +45,11 @@
 		$mail->Subject = "Contact Us Form Submission";
 		$mail->Body = $message;
 		// $mail->AltBody = "This is the plain text version of the email content";
+
 		if(!$mail->send()) 
 		{
-			if(isset($_POST['page'])){
-				if($page == "about"){
-				header("Location: aboutus.html");
-			}
+			if($page == "about"){
+				header("Location: about.html");
 			}
 		    // echo "Mailer Error: " . $mail->ErrorInfo;
 		    header("Location: ../index.php");
@@ -60,14 +57,12 @@
 		} 
 		else 
 		{
-			if(isset($_POST['page'])){
-				if($page == "about"){
-				header("Location: aboutus.html");
+			if($page == "about"){
+				header("Location: about.html");
 			}
 		    // echo "Message has been sent successfully";
 		    header("Location: ../index.php");
 		}
-		
 
 	// 	$headers = "From: " . $email;
 

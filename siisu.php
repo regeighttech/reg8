@@ -109,6 +109,9 @@
             <div class="collapse navbar-collapse" id="Navbar">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active"><a class="nav-link" href="#" data-toggle="collapse" data-target=".navbar-collapse.show"><span class="fa fa-home fa-lg"></span> Home</a></li>
+	                <div>
+	                    <input type="hidden" name="page" value="about">
+	                </div>
                     <li class="nav-item"><a class="nav-link" href="reg8/aboutus.html"><span class="fa fa-info ga-lg"></span> About</a></li>
                     <li class="nav-item" id="contactUsBtn"><a class="nav-link" href="#" href="#" data-toggle="collapse" data-target=".navbar-collapse.show"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
                 </ul>
