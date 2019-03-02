@@ -49,7 +49,7 @@
 		if(!$mail->send()) 
 		{
 			if($page == "about"){
-				header("Location: about.html");
+				header("Location: aboutus.html");
 			}
 		    // echo "Mailer Error: " . $mail->ErrorInfo;
 		    header("Location: ../index.php");
@@ -58,7 +58,7 @@
 		else 
 		{
 			if($page == "about"){
-				header("Location: about.html");
+				header("Location: aboutus.html");
 			}
 		    // echo "Message has been sent successfully";
 		    header("Location: ../index.php");
