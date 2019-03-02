@@ -47,7 +47,7 @@
 		$mail->Subject = "Contact Us Form Submission";
 		$mail->Body = $message;
 		// $mail->AltBody = "This is the plain text version of the email content";
-/*		if(!$mail->send()) 
+		if(!$mail->send()) 
 		{
 			if(isset($_POST['page'])){
 				if($page == "about"){
@@ -67,7 +67,7 @@
 		    // echo "Message has been sent successfully";
 		    header("Location: ../index.php");
 		}
-		*/
+		
 
 	// 	$headers = "From: " . $email;
 
