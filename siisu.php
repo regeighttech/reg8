@@ -78,8 +78,8 @@
 
 		/*Center Logo*/
 		#center{
-		    max-width:25%;
 		  	max-height:25%;
+		    width:auto;
 			position: absolute;
 			left: 50%;
 			top: 50%;
@@ -131,7 +131,8 @@
 		<!--<img id="topLeft" src="reg8/img/SiiSUBlueWhite.svg" alt="SiiSu Logo">-->
 
 		<div class="content">
-			<div style="color: #fff;" id="myBtn">Contact Us</div>
+			<!--Former bottom contact us button
+			<div style="color: #fff;" id="myBtn">Contact Us</div>-->
 			<span id="copyRightsBottomRight">Powered by SiiSU Technologies</span>
 			<span id="copyRightsBottomLeft">© 2019 | SiiSU, Inc. <i>A Delaware Corporation.</i> All rights reserved.</span>
 		</div>
@@ -247,6 +248,7 @@
 	  });
 	});
 
+	/* FOR BOTTOM CONTACT US BOTTOM
 	jQuery(function() {
 	  // contact form animations
 	  jQuery('#myBtn').click(function() {
@@ -261,7 +263,7 @@
 	        container.fadeOut();
 	    }
 	  });
-	});
+	});*/
 
 	  jQuery(function() {
 	  // contact form animations
