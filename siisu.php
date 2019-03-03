@@ -79,7 +79,7 @@
 		/*Center Logo*/
 		#center{
 		    white-space: nowrap;
-		    font-size: 28pt;
+		    font-size: 3.5vw;
 		    position: absolute;
 		    left: 50%;
 		    top: 50%;
@@ -93,28 +93,6 @@
 		    max-height: 2*2;
 		    text-align: center;
 		}
-
-
-		@media only screen and {max-width: 960px}{
-			/*Center Logo*/
-			#center{
-			    white-space: nowrap;
-			    font-size: 3.5vw;
-			    position: absolute;
-			    left: 50%;
-			    top: 50%;
-			    transform: translate(-50%, -50%);
-			    overflow: hidden;
-			    text-overflow: ellipsis;
-			    display: -webkit-box;
-			    -webkit-box-orient: vertical;
-			    -webkit-line-clamp: 2;
-			    line-height: 2;
-			    max-height: 2*2;
-			    text-align: center;
-			}
-		}
-
 
 		#topLeft{
 			position:fixed;
