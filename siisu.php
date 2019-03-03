@@ -78,8 +78,8 @@
 
 		/*Center Logo*/
 		#center{
-		  	max-height:25%;
-		    width:auto;
+			white-space: nowrap;
+    		font-size: 2.5vw;
 			position: absolute;
 			left: 50%;
 			top: 50%;
@@ -129,8 +129,10 @@
 		-->
 
 		<!--<img src="img/siisu.png" alt="SiiSu Logo">-->
-		<span style="color: #fff; width: 90%;" id="center">
-		Bringing the next generation of oversight to FinTech.</span>
+		<span style="color: #fff;" id="center">
+		Bringing the next generation</span>
+		<span style="color: #fff;" id="center">
+		of oversight to FinTech</span>
 
 		<!--<img id="topRight" src="img/SiiSUBlueBlack.png" alt="SiiSu Logo">-->
 		<!--<img id="topLeft" src="reg8/img/SiiSUBlueWhite.svg" alt="SiiSu Logo">-->
