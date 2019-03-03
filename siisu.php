@@ -84,6 +84,13 @@
 			left: 50%;
 			top: 50%;
 			transform: translate(-50%, -50%);
+			overflow: hidden;
+		   text-overflow: ellipsis;
+		   display: -webkit-box;
+		   -webkit-box-orient: vertical;
+		   -webkit-line-clamp: N; /* number of lines to show */
+		   line-height: X;        /* fallback */
+		   max-height: X*N; 
 		}
 
 		#topLeft{
@@ -130,9 +137,7 @@
 
 		<!--<img src="img/siisu.png" alt="SiiSu Logo">-->
 		<span style="color: #fff;" id="center">
-		Bringing the next generation</span>
-		<span style="color: #fff;" id="center">
-		of oversight to FinTech</span>
+		Bringing the next generation of oversight to FinTech</span>
 
 		<!--<img id="topRight" src="img/SiiSUBlueBlack.png" alt="SiiSu Logo">-->
 		<!--<img id="topLeft" src="reg8/img/SiiSUBlueWhite.svg" alt="SiiSu Logo">-->
