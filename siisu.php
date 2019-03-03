@@ -78,19 +78,20 @@
 
 		/*Center Logo*/
 		#center{
-			white-space: nowrap;
-    		font-size: 2.5vw;
-			position: absolute;
-			left: 50%;
-			top: 50%;
-			transform: translate(-50%, -50%);
-			overflow: hidden;
-		   text-overflow: ellipsis;
-		   display: -webkit-box;
-		   -webkit-box-orient: vertical;
-		   -webkit-line-clamp: N; /* number of lines to show */
-		   line-height: X;        /* fallback */
-		   max-height: X*N; 
+		    white-space: nowrap;
+		    font-size: 3.5vw;
+		    position: absolute;
+		    left: 50%;
+		    top: 50%;
+		    transform: translate(-50%, -50%);
+		    overflow: hidden;
+		    text-overflow: ellipsis;
+		    display: -webkit-box;
+		    -webkit-box-orient: vertical;
+		    -webkit-line-clamp: 2;
+		    line-height: 2;
+		    max-height: 2*2;
+		    text-align: center;
 		}
 
 		#topLeft{
