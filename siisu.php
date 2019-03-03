@@ -79,7 +79,7 @@
 		/*Center Logo*/
 		#center{
 		    white-space: nowrap;
-		    font-size: 28px;
+		    font-size: 28pt;
 		    position: absolute;
 		    left: 50%;
 		    top: 50%;
