@@ -16,7 +16,7 @@
 
 	// 	$to='br3psi@siisu.org';
 	// 	$subject = 'Contact Us Form Submission';
-		$message = "Name: " . $name . "\n" . "Email: " . $email . "\n" . "Phone: " . $phone . "\n" . "Message: " . $notes;
+		$message = "Name: " . $name . "<br>" . "Email: " . $email . "<br>" . "Phone: " . $phone . "<br>" . "Message: " . $notes;
 		$mail = new PHPMailer();
 
 		//Enable SMTP debugging. 
@@ -47,7 +47,7 @@
 		// $mail->AltBody = "This is the plain text version of the email content";
 
 		$replyMessage = "Thank you for contacting us. We will make sure to review your message and respond accordingly. "
-		. "\n\n" . "Thank you," . "\n\n" . "SiiSU Admin";
+		. "<br><br>" . "Thank you," . "<br><br>" . "SiiSU Admin";
 
 		$replyEmail = new PHPMailer();
 
@@ -69,6 +69,7 @@
 
 		$replyEmail->Subject = "dontreply";
 		$replyEmail->Body = $replyMessage;
+		$replyEmail->send();
 
 		if(!$mail->send()) 
 		{
