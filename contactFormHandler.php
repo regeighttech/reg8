@@ -46,6 +46,30 @@
 		$mail->Body = $message;
 		// $mail->AltBody = "This is the plain text version of the email content";
 
+		$replyMessage = "Thank you for contacting us. We will make sure to review your message and respond accordingly. "
+		. "\n\n" . "Thank you," . "\n\n" . "SiiSU Admin";
+
+		$replyEmail = new PHPMailer();
+
+		
+		$replyEmail->isSMTP();            
+		$replyEmail->Host = "smtp.gmail.com";
+		$replyEmail->SMTPAuth = true;                          
+		$replyEmail->Username = $hostEmail;                 
+		$replyEmail->Password = $mailPass;                           
+		$replyEmail->SMTPSecure = "tls";                           
+		$replyEmail->Port = 587;                                   
+
+		$replyEmail->From = $hostEmail;
+		$replyEmail->FromName = "SiiSU";
+
+		$replyEmail->addAddress($email);
+
+		$replyEmail->isHTML(true);
+
+		$replyEmail->Subject = "dontreply";
+		$replyEmail->Body = $replyMessage;
+
 		if(!$mail->send()) 
 		{
 			if($page == "about"){
