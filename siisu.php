@@ -137,7 +137,7 @@
 		-->
 
 		<!--<img src="img/siisu.png" alt="SiiSu Logo">-->
-		<span style="color: #fff;" id="center">
+		<span class="col-12 col-md-6" style="color: #fff;" id="center">
 		Bringing the next generation of oversight to FinTech</span>
 
 		<!--<img id="topRight" src="img/SiiSUBlueBlack.png" alt="SiiSu Logo">-->
