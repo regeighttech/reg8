@@ -78,7 +78,7 @@
 
 		/*Center Logo*/
 		#center{
-		    white-space: nowrap;
+		    /*white-space: nowrap;*/
 		    font-size: 3.5vw;
 		    position: absolute;
 		    left: 50%;
